@@ -26,7 +26,7 @@
     "subtitle": "A World Without Instructions",
     "welcome_p1": "Welcome to the Negotiation Room.",
     "welcome_p2": "In real negotiations, you cannot control every circumstance.",
-    "welcome_p3": "You will make one choice. Everything else will be determined by the situation.",
+    "welcome_p3": "You will make two choices. Everything else will be determined by the situation.",
     "welcome_p4": "At the end, you will receive your negotiation case. You will have {n} minutes to propose your solution.",
     "welcome_btn": "Enter the Negotiation Room",
     "id_eyebrow": "Access control",
@@ -35,7 +35,7 @@
     "id_label": "Application ID",
     "id_hint": "Format: {example}. You will find it in your application confirmation.",
     "id_error": "This does not look like an application ID. Expected format: {example}",
-    "period_eyebrow": "Your only choice",
+    "period_eyebrow": "Choice 1 of 2",
     "period_title": "When are your negotiations taking place?",
     "final_title": "This choice is final",
     "final_body": "Once you confirm, your case will be assigned and sealed. You will not be able to go back or start again.",
@@ -87,7 +87,12 @@
     "video_body": "Please say your Case ID at the start of the video. Then submit the video and your Case ID through the application form.",
     "your_case_id": "Your Case ID",
     "go_form": "Go to the application form",
-    "back_case": "Back to my case"
+    "back_case": "Back to my case",
+    "theme_eyebrow": "Choice 2 of 2",
+    "theme_title": "What will the negotiations be about?",
+    "theme_na": "No active file",
+    "label_theme": "Choose your theme",
+    "theme": "Theme"
   },
   "ru": {
     "page_title": "Переговорная комната — Диалог о будущем 2026",
@@ -116,7 +121,7 @@
     "subtitle": "Мир без инструкций",
     "welcome_p1": "Добро пожаловать в переговорную комнату.",
     "welcome_p2": "В реальных переговорах невозможно контролировать все обстоятельства.",
-    "welcome_p3": "Вы сделаете один выбор. Всё остальное определит ситуация.",
+    "welcome_p3": "Вы сделаете два выбора. Всё остальное определит ситуация.",
     "welcome_p4": "В конце вы получите свой переговорный кейс. На то, чтобы предложить решение, у вас будет {n} минуты.",
     "welcome_btn": "Войти в переговорную комнату",
     "id_eyebrow": "Контроль доступа",
@@ -125,7 +130,7 @@
     "id_label": "Номер заявки",
     "id_hint": "Формат: {example}. Номер указан в подтверждении вашей заявки.",
     "id_error": "Это не похоже на номер заявки. Ожидаемый формат: {example}",
-    "period_eyebrow": "Ваш единственный выбор",
+    "period_eyebrow": "Выбор 1 из 2",
     "period_title": "Когда проходят ваши переговоры?",
     "final_title": "Этот выбор окончательный",
     "final_body": "После подтверждения вам будет назначен кейс, и он будет закреплён за вами. Вернуться назад или начать заново будет нельзя.",
@@ -177,6 +182,11 @@
     "video_body": "В начале видео назовите номер вашего кейса. Затем отправьте видео и номер кейса через форму заявки.",
     "your_case_id": "Ваш номер кейса",
     "go_form": "Перейти к форме заявки",
-    "back_case": "Вернуться к моему кейсу"
+    "back_case": "Вернуться к моему кейсу",
+    "theme_eyebrow": "Выбор 2 из 2",
+    "theme_title": "О чём будут переговоры?",
+    "theme_na": "Нет активного досье",
+    "label_theme": "Выбор темы",
+    "theme": "Тема"
   }
 }

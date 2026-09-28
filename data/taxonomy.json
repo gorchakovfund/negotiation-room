@@ -88,5 +88,40 @@
     "ENV": "Special envoy",
     "TPC": "Representative of a third country",
     "JUN": "Junior member proposing an alternative strategy"
-  }
+  },
+  "themes": [
+    {
+      "code": "SEC",
+      "label": {
+        "en": "Peace and security",
+        "ru": "Мир и безопасность"
+      },
+      "desc": {
+        "en": "Ceasefires, borders and incidents at sea",
+        "ru": "Перемирия, границы и инциденты на море"
+      }
+    },
+    {
+      "code": "ECO",
+      "label": {
+        "en": "Economy and resources",
+        "ru": "Экономика и ресурсы"
+      },
+      "desc": {
+        "en": "Energy, trade and infrastructure",
+        "ru": "Энергетика, торговля и инфраструктура"
+      }
+    },
+    {
+      "code": "PLN",
+      "label": {
+        "en": "People and the planet",
+        "ru": "Люди и планета"
+      },
+      "desc": {
+        "en": "Migration, water and climate",
+        "ru": "Миграция, вода и климат"
+      }
+    }
+  ]
 }

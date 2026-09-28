@@ -1,4 +1,4 @@
-import { loadData, getSituations, t, periodLabel, regionLabel } from "./data.js";
+import { loadData, getSituations, t, periodLabel, themeLabel } from "./data.js";
 import { loadUi, getLang, ui } from "./i18n.js";
 
 const esc = (s) => String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -8,13 +8,13 @@ document.getElementById("l-" + getLang())?.classList.add("is-active");
 const list = getSituations();
 
 document.getElementById("toc").innerHTML = list.map(s => `
-  <li><a href="#${s.id}"><b>${esc(periodLabel(s.period))} · ${esc(s.region)}</b>${esc(t(s.title))}</a></li>`).join("");
+  <li><a href="#${s.id}"><b>${esc(periodLabel(s.period))} · ${esc(themeLabel(s.theme))}</b>${esc(t(s.title))}</a></li>`).join("");
 
 document.getElementById("cases").innerHTML = list.map(s => `
   <article class="case briefing" id="${s.id}">
     <div class="briefing__meta">
       <span>Time <b>${esc(periodLabel(s.period))}</b></span>
-      <span>Region <b>${esc(regionLabel(s.region))}</b></span>
+      <span>${ui("theme")} <b>${esc(themeLabel(s.theme))}</b></span>
       <span>Code <b>${esc(s.id)}</b></span>
       <span class="status ${s.status === "validated" ? "status--validated" : ""}">${esc(s.status)}</span>
     </div>

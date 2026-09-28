@@ -6,6 +6,7 @@
       "status": "draft",
       "type": "fictional",
       "period": "past",
+      "theme": "ECO",
       "region": "BK",
       "title": {
         "en": "A railway across a new border",
@@ -103,6 +104,7 @@
       "status": "draft",
       "type": "fictional",
       "period": "past",
+      "theme": "SEC",
       "region": "AF",
       "title": {
         "en": "Disarming the armed groups",
@@ -200,6 +202,7 @@
       "status": "draft",
       "type": "fictional",
       "period": "past",
+      "theme": "SEC",
       "region": "AR",
       "title": {
         "en": "Drawing the desert border",
@@ -297,6 +300,7 @@
       "status": "draft",
       "type": "fictional",
       "period": "past",
+      "theme": "ECO",
       "region": "LA",
       "title": {
         "en": "Who owns the gas?",
@@ -394,6 +398,7 @@
       "status": "draft",
       "type": "fictional",
       "period": "now",
+      "theme": "PLN",
       "region": "EU",
       "title": {
         "en": "Sharing responsibility for new arrivals",
@@ -491,6 +496,7 @@
       "status": "draft",
       "type": "fictional",
       "period": "now",
+      "theme": "SEC",
       "region": "AS",
       "title": {
         "en": "An incident at the fishing grounds",
@@ -588,6 +594,7 @@
       "status": "draft",
       "type": "fictional",
       "period": "now",
+      "theme": "PLN",
       "region": "AR",
       "title": {
         "en": "A stranded tanker in the strait",
@@ -685,6 +692,7 @@
       "status": "draft",
       "type": "fictional",
       "period": "now",
+      "theme": "ECO",
       "region": "BK",
       "title": {
         "en": "A pipeline across three borders",
@@ -782,6 +790,7 @@
       "status": "draft",
       "type": "fictional",
       "period": "future",
+      "theme": "PLN",
       "region": "AF",
       "title": {
         "en": "A river in a permanent drought",
@@ -879,6 +888,7 @@
       "status": "draft",
       "type": "fictional",
       "period": "future",
+      "theme": "ECO",
       "region": "LA",
       "title": {
         "en": "Lithium and the forest",
@@ -976,6 +986,7 @@
       "status": "draft",
       "type": "fictional",
       "period": "future",
+      "theme": "PLN",
       "region": "EU",
       "title": {
         "en": "Climate relocation",
@@ -1073,6 +1084,7 @@
       "status": "draft",
       "type": "fictional",
       "period": "future",
+      "theme": "SEC",
       "region": "AS",
       "title": {
         "en": "Rules for autonomous systems",

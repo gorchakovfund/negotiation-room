@@ -4,8 +4,7 @@
 export const SCREEN_ORDER = [
   "welcome",      // 01
   "identify",     // 01b
-  "period",       // 02
-  "region",       // 03  ← point of no return on confirm
+  "period",       // 02  ← the only choice; point of no return on confirm
   "choice",       // 04
   "situation",    // 05
   "role",         // 06
@@ -15,13 +14,12 @@ export const SCREEN_ORDER = [
 ];
 
 // Screens from which the applicant may step back.
-const CAN_GO_BACK = new Set(["identify", "period", "region"]);
+const CAN_GO_BACK = new Set(["identify", "period"]);
 
 export const state = {
   screen: "welcome",
   applicationId: "",
   period: null,
-  region: null,
   sealed: null, // { situation, variant, caseId } once confirmed
 };
 
@@ -49,6 +47,6 @@ export function back() {
 export function set(patch) { Object.assign(state, patch); }
 
 export function reset() {
-  Object.assign(state, { screen: "welcome", applicationId: "", period: null, region: null, sealed: null });
+  Object.assign(state, { screen: "welcome", applicationId: "", period: null, sealed: null });
   emit();
 }

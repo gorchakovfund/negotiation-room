@@ -1,43 +1,21 @@
 {
   "periods": [
     {
-      "code": "1990",
+      "code": "past",
       "label": {
-        "en": "1990s",
-        "ru": "1990-е"
+        "en": "Past",
+        "ru": "Прошлое"
       },
       "desc": {
-        "en": "Old rules are disappearing, new ones have not yet been established",
-        "ru": "Старые правила исчезают, новые ещё не установлены"
+        "en": "Decisions that shaped the world we live in",
+        "ru": "Решения, которые сформировали мир, в котором мы живём"
       }
     },
     {
-      "code": "2000",
+      "code": "now",
       "label": {
-        "en": "2000s",
-        "ru": "2000-е"
-      },
-      "desc": {
-        "en": "A world that believed the big questions were settled",
-        "ru": "Мир, который верил, что главные вопросы уже решены"
-      }
-    },
-    {
-      "code": "2010",
-      "label": {
-        "en": "2010s",
-        "ru": "2010-е"
-      },
-      "desc": {
-        "en": "Crises arrive faster than institutions can respond",
-        "ru": "Кризисы наступают быстрее, чем институты успевают реагировать"
-      }
-    },
-    {
-      "code": "2026",
-      "label": {
-        "en": "2026",
-        "ru": "2026"
+        "en": "Now",
+        "ru": "Настоящее"
       },
       "desc": {
         "en": "A world of growing uncertainty",
@@ -45,21 +23,10 @@
       }
     },
     {
-      "code": "2040",
+      "code": "future",
       "label": {
-        "en": "2040",
-        "ru": "2040"
-      },
-      "desc": {
-        "en": "Climate and technology raise the stakes",
-        "ru": "Климат и технологии повышают ставки"
-      }
-    },
-    {
-      "code": "2050",
-      "label": {
-        "en": "2050",
-        "ru": "2050"
+        "en": "Future",
+        "ru": "Будущее"
       },
       "desc": {
         "en": "A future whose rules are yet to be written",

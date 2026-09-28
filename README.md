@@ -8,7 +8,8 @@ Live URL (after setup): **https://gorchakovfund.github.io/negotiation-room/**
 ## Current status
 
 - Every screen is clickable, in English and Russian (EN / RU switch at the top right, works on any screen).
-- The 12 draft cases are in `data/situations.json`. Each one has a context, 4 parties (each with a public position and a constraint), and 2 role-and-development variants.
+- The applicant makes one choice: **Past, Now or Future** (4 cases each). The situation within that time and the role are assigned at random.
+- The 12 draft cases are in `data/situations.json`. Each one has a context, 2 parties (the two main sides, each with a public position and a constraint), and 2 role-and-development variants.
 - **Organisers' review page:** `review.html` (https://gorchakovfund.github.io/negotiation-room/review.html) shows all 12 cases and 24 variants on one page (add `?lang=ru` for Russian). It is not linked from the applicant site, but anyone with the address can open it.
 
 | Not yet | Arrives in |

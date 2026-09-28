@@ -30,8 +30,5 @@ const visible = () => situations;
 export const periodsWithCases = () =>
   taxonomy.periods.filter(p => visible().some(s => s.period === p.code));
 
-export const regionsFor = (period) =>
-  new Set(visible().filter(s => s.period === period).map(s => s.region));
-
-export const findSituation = (period, region) =>
-  visible().find(s => s.period === period && s.region === region);
+export const situationsFor = (period) =>
+  visible().filter(s => s.period === period);

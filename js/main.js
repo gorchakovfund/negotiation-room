@@ -54,6 +54,14 @@ restart.addEventListener("click", reset);
 footer.append(restart);
 
 // Language switch: works on any screen and keeps the applicant exactly where they are.
+// Repair the buttons first, in case the browser still has an older index.html cached
+// (older versions shipped RU as a disabled button without data-lang).
+document.querySelectorAll(".topbar__lang button").forEach(b => {
+  const code = b.textContent.trim().toLowerCase();
+  if (!b.dataset.lang && (code === "en" || code === "ru")) b.dataset.lang = code;
+  b.disabled = false;
+  b.removeAttribute("title");
+});
 document.querySelectorAll("[data-lang]").forEach(b => b.addEventListener("click", () => {
   if (b.dataset.lang === getLang()) return;
   const y = window.scrollY;

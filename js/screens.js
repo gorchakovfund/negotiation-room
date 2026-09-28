@@ -1,7 +1,7 @@
 // One render function per screen. All interface text comes from data/ui-text.json via ui();
 // all case text comes from data/situations.json via t().
 import { state, set, next, back, go } from "./state.js";
-import { t, getRegions, periodsWithCases, regionsFor, periodLabel, regionLabel } from "./data.js";
+import { t, periodsWithCases, periodLabel } from "./data.js";
 import { ui, getLang } from "./i18n.js";
 import { assignCase } from "./assign.js";
 import { CONFIG } from "./config.js";
@@ -114,9 +114,13 @@ export const SCREENS = {
                 </label>
               </div>`).join("")}
           </fieldset>
+          <div class="notice" style="margin-top:var(--space-5)">
+            <strong>${ui("final_title")}</strong>
+            ${ui("final_body")}
+          </div>
           <div class="actions">
             ${backBtn()}
-            <button type="submit" class="btn" ${state.period ? "" : "disabled"}>${ui("continue")}</button>
+            <button type="submit" class="btn" ${state.period ? "" : "disabled"}>${ui("final_btn")}</button>
           </div>
         </form>
       </section>`,
@@ -124,65 +128,13 @@ export const SCREENS = {
       const form = $(root, "#period-form"), submit = $(form, "[type=submit]");
       form.addEventListener("change", () => {
         submit.disabled = false;
+        set({ period: new FormData(form).get("period") }); // survives a language switch
+      });
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
         const period = new FormData(form).get("period");
-        if (period !== state.period) set({ region: null });
-        set({ period }); // survives a language switch
-      });
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        if (!new FormData(form).get("period")) return;
-        next();
-      });
-    },
-  },
-
-  /* 03 ---------------------------------------------------------------- */
-  region: {
-    label: () => ui("label_region"),
-    render: () => {
-      const available = regionsFor(state.period);
-      return `
-      <section class="screen">
-        <p class="eyebrow">${ui("region_eyebrow")} · ${esc(periodLabel(state.period))}</p>
-        <form id="region-form">
-          <fieldset class="options">
-            <legend><h1 id="screen-title">${ui("region_title")}</h1></legend>
-            ${getRegions().map(r => {
-              const on = available.has(r.code);
-              return `
-              <div class="option">
-                <input type="radio" name="region" id="r-${r.code}" value="${r.code}"
-                  ${on ? "" : "disabled"} ${state.region === r.code ? "checked" : ""}
-                  ${on ? "" : `aria-describedby="r-${r.code}-na"`}>
-                <label for="r-${r.code}">
-                  <span class="option__key">${esc(t(r.label))}</span>
-                  ${on ? "" : `<span class="option__na" id="r-${r.code}-na">${ui("region_na")}</span>`}
-                </label>
-              </div>`;
-            }).join("")}
-          </fieldset>
-          <div class="notice" style="margin-top:var(--space-5)">
-            <strong>${ui("final_title")}</strong>
-            ${ui("final_body")}
-          </div>
-          <div class="actions">
-            ${backBtn()}
-            <button type="submit" class="btn" ${state.region ? "" : "disabled"}>${ui("final_btn")}</button>
-          </div>
-        </form>
-      </section>`;
-    },
-    bind: (root) => {
-      const form = $(root, "#region-form"), submit = $(form, "[type=submit]");
-      form.addEventListener("change", () => {
-        submit.disabled = false;
-        set({ region: new FormData(form).get("region") });
-      });
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        const region = new FormData(form).get("region");
-        if (!region) return;
-        set({ region, sealed: assignCase({ period: state.period, region }) });
+        if (!period) return;
+        set({ period, sealed: assignCase({ period }) });
         reveal.role = reveal.development = false;
         next();
       });
@@ -215,7 +167,6 @@ export const SCREENS = {
         <article class="briefing" aria-labelledby="screen-title">
           <div class="briefing__meta">
             <span>${ui("time")} <b>${esc(periodLabel(situation.period))}</b></span>
-            <span>${ui("region")} <b>${esc(regionLabel(situation.region))}</b></span>
           </div>
           <h1 id="screen-title">${esc(t(situation.title))}</h1>
           <p class="briefing__body">${esc(t(situation.context))}</p>
@@ -291,7 +242,6 @@ export const SCREENS = {
           </div>
           <dl>
             <dt>${ui("time")}</dt><dd>${esc(periodLabel(situation.period))}</dd>
-            <dt>${ui("region")}</dt><dd>${esc(regionLabel(situation.region))}</dd>
             <dt>${ui("situation")}</dt><dd><strong>${esc(t(situation.title))}</strong><br>${esc(t(situation.context))}</dd>
             <dt>${ui("your_role")}</dt><dd><strong>${esc(t(variant.role.title))}</strong><br>${esc(t(variant.role.brief))}</dd>
             <dt>${ui("new_development")}</dt><dd>${esc(t(variant.development))}</dd>
@@ -365,7 +315,6 @@ function caseText(l) {
     `${u("case_id")}: ${caseId}`,
     ``,
     `${u("time")}: ${periodLabel(situation.period, l)}`,
-    `${u("region")}: ${regionLabel(situation.region, l)}`,
     `${u("situation")}: ${t(situation.title, l)}`,
     t(situation.context, l),
     ``,

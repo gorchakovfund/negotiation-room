@@ -3,55 +3,67 @@
     {
       "code": "1990",
       "label": {
-        "en": "1990s"
+        "en": "1990s",
+        "ru": "1990-е"
       },
       "desc": {
-        "en": "Old rules are disappearing, new ones have not yet been established"
+        "en": "Old rules are disappearing, new ones have not yet been established",
+        "ru": "Старые правила исчезают, новые ещё не установлены"
       }
     },
     {
       "code": "2000",
       "label": {
-        "en": "2000s"
+        "en": "2000s",
+        "ru": "2000-е"
       },
       "desc": {
-        "en": "A world that believed the big questions were settled"
+        "en": "A world that believed the big questions were settled",
+        "ru": "Мир, который верил, что главные вопросы уже решены"
       }
     },
     {
       "code": "2010",
       "label": {
-        "en": "2010s"
+        "en": "2010s",
+        "ru": "2010-е"
       },
       "desc": {
-        "en": "Crises arrive faster than institutions can respond"
+        "en": "Crises arrive faster than institutions can respond",
+        "ru": "Кризисы наступают быстрее, чем институты успевают реагировать"
       }
     },
     {
       "code": "2026",
       "label": {
-        "en": "2026"
+        "en": "2026",
+        "ru": "2026"
       },
       "desc": {
-        "en": "A world of growing uncertainty"
+        "en": "A world of growing uncertainty",
+        "ru": "Мир растущей неопределённости"
       }
     },
     {
       "code": "2040",
       "label": {
-        "en": "2040"
+        "en": "2040",
+        "ru": "2040"
       },
       "desc": {
-        "en": "Climate and technology raise the stakes"
+        "en": "Climate and technology raise the stakes",
+        "ru": "Климат и технологии повышают ставки"
       }
     },
     {
       "code": "2050",
       "label": {
-        "en": "2050"
+        "en": "2050",
+        "ru": "2050"
       },
       "desc": {
-        "en": "A future whose rules are yet to be written"
+        "en": "A future whose rules are yet to be written",
+        "ru": "Будущее, правила которого ещё предстоит написать"
       }
     }
   ],
@@ -59,37 +71,43 @@
     {
       "code": "BK",
       "label": {
-        "en": "The Balkans"
+        "en": "The Balkans",
+        "ru": "Балканы"
       }
     },
     {
       "code": "AR",
       "label": {
-        "en": "Arabian Peninsula"
+        "en": "Arabian Peninsula",
+        "ru": "Аравийский полуостров"
       }
     },
     {
       "code": "AF",
       "label": {
-        "en": "Africa"
+        "en": "Africa",
+        "ru": "Африка"
       }
     },
     {
       "code": "LA",
       "label": {
-        "en": "Latin America"
+        "en": "Latin America",
+        "ru": "Латинская Америка"
       }
     },
     {
       "code": "EU",
       "label": {
-        "en": "Europe"
+        "en": "Europe",
+        "ru": "Европа"
       }
     },
     {
       "code": "AS",
       "label": {
-        "en": "Asia"
+        "en": "Asia",
+        "ru": "Азия"
       }
     }
   ],

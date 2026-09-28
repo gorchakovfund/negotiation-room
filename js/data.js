@@ -1,9 +1,9 @@
 // Loads the case bank from data/*.json. The only file that knows where cases come from,
 // so a future backend replaces this file, not the screens.
+import { getLang } from "./i18n.js";
 
 let taxonomy = null;
 let situations = [];
-let lang = "en";
 
 export async function loadData() {
   const [tax, sit] = await Promise.all([
@@ -14,15 +14,15 @@ export async function loadData() {
   situations = sit.situations;
 }
 
-// Text in the current language, falling back to English.
-export const t = (obj) => (obj == null ? "" : typeof obj === "string" ? obj : obj[lang] ?? obj.en ?? "");
+// Text in the current language (or the one given), falling back to English.
+export const t = (obj, l = getLang()) => (obj == null ? "" : typeof obj === "string" ? obj : obj[l] || obj.en || "");
 
 export const getPeriods = () => taxonomy.periods;
 export const getRegions = () => taxonomy.regions;
 export const getSituations = () => situations;
 
-export const periodLabel = (code) => t(taxonomy.periods.find(p => p.code === code)?.label);
-export const regionLabel = (code) => t(taxonomy.regions.find(r => r.code === code)?.label);
+export const periodLabel = (code, l) => t(taxonomy.periods.find(p => p.code === code)?.label, l);
+export const regionLabel = (code, l) => t(taxonomy.regions.find(r => r.code === code)?.label, l);
 
 // Stage 3 will add: public mode shows only status === "validated".
 const visible = () => situations;

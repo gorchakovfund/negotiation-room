@@ -8,54 +8,68 @@
       "period": "1990",
       "region": "BK",
       "title": {
-        "en": "A divided town after the ceasefire"
+        "en": "A divided town after the ceasefire",
+        "ru": "Разделённый город после перемирия"
       },
       "context": {
-        "en": "The war ended four months ago, but the ceasefire line still runs through the middle of a river town. Before the war, two communities lived side by side; now each controls one bank, and the only bridge is guarded from both ends. Thousands of families driven out of their homes want to return, but many of those homes are now occupied by people displaced from elsewhere. An international administration has a mandate to reunify the town’s institutions — police, schools, water supply — within a year, but it can do little without local cooperation. Donors have promised reconstruction money, but only for a town that works as one. Local elections are due in five months, and every leader fears looking weak before them."
+        "en": "The war ended four months ago, but the ceasefire line still runs through the middle of a river town. Before the war, two communities lived side by side; now each controls one bank, and the only bridge is guarded from both ends. Thousands of families driven out of their homes want to return, but many of those homes are now occupied by people displaced from elsewhere. An international administration has a mandate to reunify the town’s institutions — police, schools, water supply — within a year, but it can do little without local cooperation. Donors have promised reconstruction money, but only for a town that works as one. Local elections are due in five months, and every leader fears looking weak before them.",
+        "ru": "Война закончилась четыре месяца назад, но линия прекращения огня по-прежнему проходит через центр города на реке. До войны две общины жили бок о бок; теперь каждая контролирует свой берег, а единственный мост охраняется с обеих сторон. Тысячи семей, изгнанных из своих домов, хотят вернуться, но многие из этих домов заняты людьми, перемещёнными из других мест. Международная администрация получила мандат за год объединить городские институты — полицию, школы, водоснабжение, — но без сотрудничества местных лидеров она мало что может. Доноры обещали деньги на восстановление, но только для города, который работает как единое целое. Через пять месяцев местные выборы, и каждый лидер боится показаться слабым."
       },
       "parties": [
         {
           "name": {
-            "en": "Leadership of the east-bank community"
+            "en": "Leadership of the east-bank community",
+            "ru": "Руководство общины восточного берега"
           },
           "position": {
-            "en": "Displaced families must be able to return first; no joint institutions until property is restored."
+            "en": "Displaced families must be able to return first; no joint institutions until property is restored.",
+            "ru": "Сначала — возвращение перемещённых семей; никаких общих институтов, пока не восстановлены права собственности."
           },
           "constraint": {
-            "en": "Many of its own displaced families live in homes it would have to hand back."
+            "en": "Many of its own displaced families live in homes it would have to hand back.",
+            "ru": "Многие её собственные перемещённые семьи живут в домах, которые пришлось бы вернуть."
           }
         },
         {
           "name": {
-            "en": "Leadership of the west-bank community"
+            "en": "Leadership of the west-bank community",
+            "ru": "Руководство общины западного берега"
           },
           "position": {
-            "en": "Joint institutions only with equal representation and a veto on key decisions."
+            "en": "Joint institutions only with equal representation and a veto on key decisions.",
+            "ru": "Общие институты — только при равном представительстве и праве вето по ключевым решениям."
           },
           "constraint": {
-            "en": "Hardliners accuse it of preparing to “give the town away” before the elections."
+            "en": "Hardliners accuse it of preparing to “give the town away” before the elections.",
+            "ru": "Радикалы обвиняют его в том, что оно готово «сдать город» накануне выборов."
           }
         },
         {
           "name": {
-            "en": "International administrator"
+            "en": "International administrator",
+            "ru": "Международный администратор"
           },
           "position": {
-            "en": "A single town council, police force and school system within 12 months."
+            "en": "A single town council, police force and school system within 12 months.",
+            "ru": "Единый городской совет, полиция и система школ в течение 12 месяцев."
           },
           "constraint": {
-            "en": "It can impose decisions, but imposed decisions have so far been ignored on the ground."
+            "en": "It can impose decisions, but imposed decisions have so far been ignored on the ground.",
+            "ru": "Он может навязывать решения, но навязанные решения до сих пор игнорировались на месте."
           }
         },
         {
           "name": {
-            "en": "Donor group"
+            "en": "Donor group",
+            "ru": "Группа доноров"
           },
           "position": {
-            "en": "Reconstruction money only for projects that serve both communities."
+            "en": "Reconstruction money only for projects that serve both communities.",
+            "ru": "Деньги на восстановление — только для проектов, которые служат обеим общинам."
           },
           "constraint": {
-            "en": "Its governments are losing patience and want to announce a success."
+            "en": "Its governments are losing patience and want to announce a success.",
+            "ru": "Её правительства теряют терпение и хотят объявить об успехе."
           }
         }
       ],
@@ -66,14 +80,17 @@
           "role": {
             "code": "ADV",
             "title": {
-              "en": "Adviser to the international administrator"
+              "en": "Adviser to the international administrator",
+              "ru": "Советник международного администратора"
             },
             "brief": {
-              "en": "You advise the administrator on the reunification plan. You can draft proposals and meet both leaderships informally, but you cannot promise money or change the 12-month deadline."
+              "en": "You advise the administrator on the reunification plan. You can draft proposals and meet both leaderships informally, but you cannot promise money or change the 12-month deadline.",
+              "ru": "Вы консультируете администратора по плану объединения. Вы можете готовить предложения и неформально встречаться с руководством обеих общин, но не можете обещать деньги или менять 12-месячный срок."
             }
           },
           "development": {
-            "en": "A night-time fire destroys a house belonging to a family that had just returned. Each side blames the other, and both leaderships announce they are suspending the talks."
+            "en": "A night-time fire destroys a house belonging to a family that had just returned. Each side blames the other, and both leaderships announce they are suspending the talks.",
+            "ru": "Ночью сгорает дом семьи, которая только что вернулась. Каждая сторона обвиняет другую, и руководство обеих общин объявляет о приостановке переговоров."
           },
           "internal": {
             "difficulty": null,
@@ -88,14 +105,17 @@
           "role": {
             "code": "NEG",
             "title": {
-              "en": "Negotiator for the east-bank community"
+              "en": "Negotiator for the east-bank community",
+              "ru": "Переговорщик от общины восточного берега"
             },
             "brief": {
-              "en": "You lead your community’s team at the table. Your community council expects you to secure the return of displaced families. You may agree to joint institutions only if the council approves them."
+              "en": "You lead your community’s team at the table. Your community council expects you to secure the return of displaced families. You may agree to joint institutions only if the council approves them.",
+              "ru": "Вы возглавляете переговорную команду своей общины. Совет общины ждёт, что вы добьётесь возвращения перемещённых семей. Согласиться на общие институты вы можете только с одобрения совета."
             }
           },
           "development": {
-            "en": "The donor group announces that half of the reconstruction money will go to another town unless a joint water utility is agreed within two weeks."
+            "en": "The donor group announces that half of the reconstruction money will go to another town unless a joint water utility is agreed within two weeks.",
+            "ru": "Группа доноров объявляет, что половина денег на восстановление уйдёт другому городу, если в течение двух недель не будет создано общее предприятие водоснабжения."
           },
           "internal": {
             "difficulty": null,
@@ -113,54 +133,68 @@
       "period": "1990",
       "region": "AF",
       "title": {
-        "en": "Disarming the armed groups"
+        "en": "Disarming the armed groups",
+        "ru": "Разоружение вооружённых групп"
       },
       "context": {
-        "en": "After seven years of civil war, the government and the main rebel movement have signed a peace agreement. It promises that fighters will hand in their weapons in exchange for cash, training and a place in a new national army. Six months later, almost nothing has happened. Rebel commanders say they will not disarm while militias allied to the government remain armed. The government says it cannot pay for the programme until donors release funds; donors want to see disarmament begin first. A regional peacekeeping force monitors the ceasefire, but its mandate expires in ninety days. Tens of thousands of young fighters have no income, and clashes over mining areas are increasing."
+        "en": "After seven years of civil war, the government and the main rebel movement have signed a peace agreement. It promises that fighters will hand in their weapons in exchange for cash, training and a place in a new national army. Six months later, almost nothing has happened. Rebel commanders say they will not disarm while militias allied to the government remain armed. The government says it cannot pay for the programme until donors release funds; donors want to see disarmament begin first. A regional peacekeeping force monitors the ceasefire, but its mandate expires in ninety days. Tens of thousands of young fighters have no income, and clashes over mining areas are increasing.",
+        "ru": "После семи лет гражданской войны правительство и главное повстанческое движение подписали мирное соглашение. Оно обещает, что бойцы сдадут оружие в обмен на деньги, профессиональное обучение и место в новой национальной армии. Прошло шесть месяцев, но почти ничего не сделано. Командиры повстанцев заявляют, что не разоружатся, пока остаются вооружёнными ополчения, союзные правительству. Правительство говорит, что не может финансировать программу, пока доноры не выделят средства; доноры же хотят сначала увидеть начало разоружения. Региональные миротворческие силы следят за соблюдением перемирия, но их мандат истекает через девяносто дней. Десятки тысяч молодых бойцов остаются без дохода, а столкновения за районы добычи полезных ископаемых учащаются."
       },
       "parties": [
         {
           "name": {
-            "en": "The government"
+            "en": "The government",
+            "ru": "Правительство"
           },
           "position": {
-            "en": "The rebels must disarm first; the militias are “local defence” and will be dealt with later."
+            "en": "The rebels must disarm first; the militias are “local defence” and will be dealt with later.",
+            "ru": "Сначала разоружаются повстанцы; ополчения — это «местная самооборона», ими займутся позже."
           },
           "constraint": {
-            "en": "It relies on the militias for security in several provinces."
+            "en": "It relies on the militias for security in several provinces.",
+            "ru": "Оно зависит от ополчений в обеспечении безопасности в нескольких провинциях."
           }
         },
         {
           "name": {
-            "en": "The rebel movement"
+            "en": "The rebel movement",
+            "ru": "Повстанческое движение"
           },
           "position": {
-            "en": "All armed groups disarm at the same time, plus guaranteed senior posts in the new army."
+            "en": "All armed groups disarm at the same time, plus guaranteed senior posts in the new army.",
+            "ru": "Одновременное разоружение всех вооружённых групп и гарантированные высокие посты в новой армии."
           },
           "constraint": {
-            "en": "Its commanders fear prosecution and losing control of mining revenue."
+            "en": "Its commanders fear prosecution and losing control of mining revenue.",
+            "ru": "Его командиры боятся уголовного преследования и потери контроля над доходами от добычи."
           }
         },
         {
           "name": {
-            "en": "Regional peacekeeping force"
+            "en": "Regional peacekeeping force",
+            "ru": "Региональные миротворческие силы"
           },
           "position": {
-            "en": "A clear timetable that justifies extending its mandate."
+            "en": "A clear timetable that justifies extending its mandate.",
+            "ru": "Чёткий график, который оправдает продление их мандата."
           },
           "constraint": {
-            "en": "The states paying for it want to bring their troops home."
+            "en": "The states paying for it want to bring their troops home.",
+            "ru": "Государства, которые их финансируют, хотят вернуть свои войска домой."
           }
         },
         {
           "name": {
-            "en": "Donor coalition"
+            "en": "Donor coalition",
+            "ru": "Коалиция доноров"
           },
           "position": {
-            "en": "Money for the programme will follow visible disarmament."
+            "en": "Money for the programme will follow visible disarmament.",
+            "ru": "Деньги на программу поступят после заметного прогресса в разоружении."
           },
           "constraint": {
-            "en": "Earlier funds disappeared, and its parliaments are watching closely."
+            "en": "Earlier funds disappeared, and its parliaments are watching closely.",
+            "ru": "Прежние средства исчезли, и её парламенты внимательно следят за происходящим."
           }
         }
       ],
@@ -171,14 +205,17 @@
           "role": {
             "code": "IOR",
             "title": {
-              "en": "Representative of an international organisation"
+              "en": "Representative of an international organisation",
+              "ru": "Представитель международной организации"
             },
             "brief": {
-              "en": "You head the office that will run the disarmament programme. Both sides see you as neutral, but you control no money yourself and cannot guarantee anyone’s safety."
+              "en": "You head the office that will run the disarmament programme. Both sides see you as neutral, but you control no money yourself and cannot guarantee anyone’s safety.",
+              "ru": "Вы возглавляете офис, который будет проводить программу разоружения. Обе стороны считают вас нейтральным, но у вас нет собственных денег, и вы не можете гарантировать ничью безопасность."
             }
           },
           "development": {
-            "en": "A rebel unit attacks a government convoy near a mining area. Rebel leaders say the unit acted without orders, but they cannot prove it."
+            "en": "A rebel unit attacks a government convoy near a mining area. Rebel leaders say the unit acted without orders, but they cannot prove it.",
+            "ru": "Отряд повстанцев нападает на правительственную колонну рядом с районом добычи. Лидеры повстанцев заявляют, что отряд действовал без приказа, но доказать этого не могут."
           },
           "internal": {
             "difficulty": null,
@@ -193,14 +230,17 @@
           "role": {
             "code": "JUN",
             "title": {
-              "en": "Junior member of the government delegation, asked to propose an alternative strategy"
+              "en": "Junior member of the government delegation, asked to propose an alternative strategy",
+              "ru": "Младший член правительственной делегации, которому поручено предложить альтернативную стратегию"
             },
             "brief": {
-              "en": "The head of your delegation believes the talks are stuck and has asked you to propose a new approach by tomorrow. You may suggest anything, but the President must be able to present it as strength, not as a concession."
+              "en": "The head of your delegation believes the talks are stuck and has asked you to propose a new approach by tomorrow. You may suggest anything, but the President must be able to present it as strength, not as a concession.",
+              "ru": "Глава вашей делегации считает, что переговоры зашли в тупик, и поручил вам к завтрашнему дню предложить новый подход. Вы можете предложить что угодно, но президент должен иметь возможность представить это как проявление силы, а не как уступку."
             }
           },
           "development": {
-            "en": "A regional newspaper publishes leaked minutes showing that the government privately considered bringing the militias into the new army before the rebels."
+            "en": "A regional newspaper publishes leaked minutes showing that the government privately considered bringing the militias into the new army before the rebels.",
+            "ru": "Региональная газета публикует утёкший протокол, из которого следует, что правительство втайне рассматривало возможность включить ополчения в новую армию раньше повстанцев."
           },
           "internal": {
             "difficulty": null,
@@ -218,54 +258,68 @@
       "period": "2000",
       "region": "AR",
       "title": {
-        "en": "Drawing the desert border"
+        "en": "Drawing the desert border",
+        "ru": "Граница в пустыне"
       },
       "context": {
-        "en": "Two neighbouring states on the Arabian Peninsula have never formally marked a 300-kilometre stretch of their desert border. For decades it did not matter: nomadic families crossed freely with their herds, and neither state had officials there. Then a survey found a large oil field under the unmarked zone. Both states now claim it, citing different historical maps and old agreements with tribal leaders. Talks have begun under a regional council of states that wants to avoid a quarrel between its members. A foreign oil company has signed an exploration contract with one side and is waiting to drill. The families who live in the area have not been consulted by either government."
+        "en": "Two neighbouring states on the Arabian Peninsula have never formally marked a 300-kilometre stretch of their desert border. For decades it did not matter: nomadic families crossed freely with their herds, and neither state had officials there. Then a survey found a large oil field under the unmarked zone. Both states now claim it, citing different historical maps and old agreements with tribal leaders. Talks have begun under a regional council of states that wants to avoid a quarrel between its members. A foreign oil company has signed an exploration contract with one side and is waiting to drill. The families who live in the area have not been consulted by either government.",
+        "ru": "Два соседних государства Аравийского полуострова так и не провели официальную демаркацию 300-километрового участка своей границы в пустыне. Десятилетиями это не имело значения: кочевые семьи свободно пересекали её со своими стадами, а государственных служащих там не было ни у одной из сторон. Затем геологическая разведка обнаружила под неразмеченной территорией крупное нефтяное месторождение. Теперь на него претендуют оба государства, ссылаясь на разные исторические карты и старые договорённости с вождями племён. Переговоры начались под эгидой регионального совета государств, который хочет избежать ссоры между своими членами. Иностранная нефтяная компания подписала контракт на разведку с одной из сторон и ждёт начала бурения. Ни одно из правительств не спросило мнения семей, живущих в этом районе."
       },
       "parties": [
         {
           "name": {
-            "en": "The northern state"
+            "en": "The northern state",
+            "ru": "Северное государство"
           },
           "position": {
-            "en": "The border follows a 1930s map that puts most of the oil field on its side."
+            "en": "The border follows a 1930s map that puts most of the oil field on its side.",
+            "ru": "Граница проходит по карте 1930-х годов, согласно которой большая часть месторождения находится на его стороне."
           },
           "constraint": {
-            "en": "Its ruler has told the public that “not one grain of sand” will be given up."
+            "en": "Its ruler has told the public that “not one grain of sand” will be given up.",
+            "ru": "Его правитель публично заявил, что «ни одна песчинка» не будет отдана."
           }
         },
         {
           "name": {
-            "en": "The southern state"
+            "en": "The southern state",
+            "ru": "Южное государство"
           },
           "position": {
-            "en": "The border follows the grazing lands of tribes loyal to it, which puts the field on its side."
+            "en": "The border follows the grazing lands of tribes loyal to it, which puts the field on its side.",
+            "ru": "Граница проходит по пастбищам лояльных ему племён, и месторождение оказывается на его стороне."
           },
           "constraint": {
-            "en": "The field is its only prospect of new revenue for a decade."
+            "en": "The field is its only prospect of new revenue for a decade.",
+            "ru": "Месторождение — его единственный шанс получить новые доходы в ближайшие десять лет."
           }
         },
         {
           "name": {
-            "en": "Regional council of states"
+            "en": "Regional council of states",
+            "ru": "Региональный совет государств"
           },
           "position": {
-            "en": "A quick settlement that keeps both members inside the council."
+            "en": "A quick settlement that keeps both members inside the council.",
+            "ru": "Быстрое урегулирование, которое сохранит обоих членов в составе совета."
           },
           "constraint": {
-            "en": "It has no power to impose a decision."
+            "en": "It has no power to impose a decision.",
+            "ru": "У него нет полномочий навязать решение."
           }
         },
         {
           "name": {
-            "en": "Families of the border area"
+            "en": "Families of the border area",
+            "ru": "Семьи приграничного района"
           },
           "position": {
-            "en": "Freedom to move their herds across any new line."
+            "en": "Freedom to move their herds across any new line.",
+            "ru": "Свобода перегонять стада через любую новую линию границы."
           },
           "constraint": {
-            "en": "They have no seat at the talks."
+            "en": "They have no seat at the talks.",
+            "ru": "У них нет места за столом переговоров."
           }
         }
       ],
@@ -276,14 +330,17 @@
           "role": {
             "code": "MED",
             "title": {
-              "en": "Mediator appointed by the regional council"
+              "en": "Mediator appointed by the regional council",
+              "ru": "Посредник, назначенный региональным советом"
             },
             "brief": {
-              "en": "Both states accepted you as mediator. You can propose solutions and meet each side separately, but your recommendations are not binding, and you lose your role if either side rejects you."
+              "en": "Both states accepted you as mediator. You can propose solutions and meet each side separately, but your recommendations are not binding, and you lose your role if either side rejects you.",
+              "ru": "Оба государства приняли вас в качестве посредника. Вы можете предлагать решения и встречаться с каждой стороной отдельно, но ваши рекомендации не обязательны, и вы потеряете свою роль, если одна из сторон вас отвергнет."
             }
           },
           "development": {
-            "en": "Border guards from the northern state detain a family crossing with their camels. The southern state calls it a provocation and recalls its delegation for consultations."
+            "en": "Border guards from the northern state detain a family crossing with their camels. The southern state calls it a provocation and recalls its delegation for consultations.",
+            "ru": "Пограничники северного государства задерживают семью, переходившую границу с верблюдами. Южное государство называет это провокацией и отзывает свою делегацию для консультаций."
           },
           "internal": {
             "difficulty": null,
@@ -298,14 +355,17 @@
           "role": {
             "code": "ADV",
             "title": {
-              "en": "Legal adviser to the southern state’s delegation"
+              "en": "Legal adviser to the southern state’s delegation",
+              "ru": "Юридический советник делегации южного государства"
             },
             "brief": {
-              "en": "You prepare your delegation’s arguments and draft its proposals. The head of delegation decides, but trusts your judgment. Your government has said the oil field must not be lost."
+              "en": "You prepare your delegation’s arguments and draft its proposals. The head of delegation decides, but trusts your judgment. Your government has said the oil field must not be lost.",
+              "ru": "Вы готовите аргументы делегации и проекты её предложений. Решения принимает глава делегации, но он доверяет вашему мнению. Ваше правительство заявило, что месторождение нельзя потерять."
             }
           },
           "development": {
-            "en": "New geological data show the oil field is smaller than thought and lies mostly in an area that both maps place in the north."
+            "en": "New geological data show the oil field is smaller than thought and lies mostly in an area that both maps place in the north.",
+            "ru": "Новые геологические данные показывают, что месторождение меньше, чем предполагалось, и в основном находится на территории, которую обе карты относят к северу."
           },
           "internal": {
             "difficulty": null,
@@ -323,54 +383,68 @@
       "period": "2000",
       "region": "LA",
       "title": {
-        "en": "Who owns the gas?"
+        "en": "Who owns the gas?",
+        "ru": "Кому принадлежит газ?"
       },
       "context": {
-        "en": "A newly elected government has come to power promising that the country’s natural gas will finally benefit its own people. For years a foreign energy consortium has extracted the gas under contracts that leave the state a small share of the revenue. The new president has announced that the contracts will be renegotiated within 180 days — or the fields will be taken over. Most of the gas is exported to a larger neighbouring country whose industry depends on it. Indigenous communities near the fields support the government, but they also want a direct share of the revenue and a say over new drilling. The consortium has hinted at international arbitration, which could take years and freeze all new investment."
+        "en": "A newly elected government has come to power promising that the country’s natural gas will finally benefit its own people. For years a foreign energy consortium has extracted the gas under contracts that leave the state a small share of the revenue. The new president has announced that the contracts will be renegotiated within 180 days — or the fields will be taken over. Most of the gas is exported to a larger neighbouring country whose industry depends on it. Indigenous communities near the fields support the government, but they also want a direct share of the revenue and a say over new drilling. The consortium has hinted at international arbitration, which could take years and freeze all new investment.",
+        "ru": "К власти пришло новое правительство, пообещавшее, что природный газ страны наконец начнёт приносить пользу её собственным гражданам. Многие годы иностранный энергетический консорциум добывал газ по контрактам, которые оставляли государству лишь небольшую долю доходов. Новый президент объявил, что контракты будут пересмотрены в течение 180 дней — иначе месторождения перейдут под контроль государства. Большая часть газа экспортируется в крупную соседнюю страну, промышленность которой от него зависит. Коренные общины, живущие рядом с месторождениями, поддерживают правительство, но также требуют прямой доли доходов и права голоса при новом бурении. Консорциум намекает на международный арбитраж, который может занять годы и заморозить все новые инвестиции."
       },
       "parties": [
         {
           "name": {
-            "en": "The new government"
+            "en": "The new government",
+            "ru": "Новое правительство"
           },
           "position": {
-            "en": "The state receives most of the revenue and controls the fields."
+            "en": "The state receives most of the revenue and controls the fields.",
+            "ru": "Государство получает большую часть доходов и контролирует месторождения."
           },
           "constraint": {
-            "en": "It lacks the technical expertise to run the fields alone."
+            "en": "It lacks the technical expertise to run the fields alone.",
+            "ru": "Ему не хватает технической экспертизы, чтобы самостоятельно управлять месторождениями."
           }
         },
         {
           "name": {
-            "en": "Foreign energy consortium"
+            "en": "Foreign energy consortium",
+            "ru": "Иностранный энергетический консорциум"
           },
           "position": {
-            "en": "Contracts must be respected; any change requires full compensation."
+            "en": "Contracts must be respected; any change requires full compensation.",
+            "ru": "Контракты должны соблюдаться; любые изменения — только с полной компенсацией."
           },
           "constraint": {
-            "en": "It has invested heavily and cannot easily move its equipment elsewhere."
+            "en": "It has invested heavily and cannot easily move its equipment elsewhere.",
+            "ru": "Он вложил огромные средства и не может легко перевезти оборудование в другое место."
           }
         },
         {
           "name": {
-            "en": "Neighbouring importing country"
+            "en": "Neighbouring importing country",
+            "ru": "Соседняя страна-импортёр"
           },
           "position": {
-            "en": "Uninterrupted supply at a predictable price."
+            "en": "Uninterrupted supply at a predictable price.",
+            "ru": "Бесперебойные поставки по предсказуемой цене."
           },
           "constraint": {
-            "en": "It has no alternative supplier in the short term."
+            "en": "It has no alternative supplier in the short term.",
+            "ru": "В краткосрочной перспективе у неё нет альтернативного поставщика."
           }
         },
         {
           "name": {
-            "en": "Indigenous communities"
+            "en": "Indigenous communities",
+            "ru": "Коренные общины"
           },
           "position": {
-            "en": "A direct share of the revenue and consent over new drilling."
+            "en": "A direct share of the revenue and consent over new drilling.",
+            "ru": "Прямая доля доходов и согласие на новое бурение."
           },
           "constraint": {
-            "en": "They are divided over whether to negotiate or protest."
+            "en": "They are divided over whether to negotiate or protest.",
+            "ru": "Они расходятся во мнениях, вести переговоры или протестовать."
           }
         }
       ],
@@ -381,14 +455,17 @@
           "role": {
             "code": "HOD",
             "title": {
-              "en": "Head of the government’s negotiating team"
+              "en": "Head of the government’s negotiating team",
+              "ru": "Руководитель переговорной группы правительства"
             },
             "brief": {
-              "en": "You represent the new government. The President expects a result he can present as a victory, but you know the country needs the consortium’s technology for at least five more years."
+              "en": "You represent the new government. The President expects a result he can present as a victory, but you know the country needs the consortium’s technology for at least five more years.",
+              "ru": "Вы представляете новое правительство. Президент ждёт результата, который можно представить как победу, но вы знаете, что стране ещё как минимум пять лет понадобятся технологии консорциума."
             }
           },
           "development": {
-            "en": "On the President’s orders, and without warning you, troops are sent to guard the gas fields. The consortium’s staff are still working, but the company has suspended all talks."
+            "en": "On the President’s orders, and without warning you, troops are sent to guard the gas fields. The consortium’s staff are still working, but the company has suspended all talks.",
+            "ru": "По приказу президента и без предупреждения вас на месторождения направлены войска для их охраны. Персонал консорциума продолжает работать, но компания приостановила все переговоры."
           },
           "internal": {
             "difficulty": null,
@@ -403,14 +480,17 @@
           "role": {
             "code": "ENV",
             "title": {
-              "en": "Special envoy of the neighbouring importing country"
+              "en": "Special envoy of the neighbouring importing country",
+              "ru": "Специальный посланник соседней страны-импортёра"
             },
             "brief": {
-              "en": "You are not a party to the contracts, but your country depends on the gas. You may offer help, such as investment or a long-term purchase agreement, but your government will not pay a much higher price."
+              "en": "You are not a party to the contracts, but your country depends on the gas. You may offer help, such as investment or a long-term purchase agreement, but your government will not pay a much higher price.",
+              "ru": "Вы не участвуете в контрактах, но ваша страна зависит от этого газа. Вы можете предложить помощь — например, инвестиции или долгосрочный договор о закупках, — но ваше правительство не станет платить намного более высокую цену."
             }
           },
           "development": {
-            "en": "Winter has arrived early, and your country’s gas reserves will run out in three weeks. Both the government and the consortium know it."
+            "en": "Winter has arrived early, and your country’s gas reserves will run out in three weeks. Both the government and the consortium know it.",
+            "ru": "Зима наступила раньше обычного, и запасов газа в вашей стране хватит на три недели. Об этом знают и правительство, и консорциум."
           },
           "internal": {
             "difficulty": null,
@@ -428,54 +508,68 @@
       "period": "2010",
       "region": "EU",
       "title": {
-        "en": "Sharing responsibility for new arrivals"
+        "en": "Sharing responsibility for new arrivals",
+        "ru": "Разделить ответственность за прибывающих"
       },
       "context": {
-        "en": "In a single summer, more than half a million people have arrived by sea on the southern coast of a union of European states, many of them fleeing wars in nearby regions. Under the union’s rules, the country where they first arrive must register them and handle their asylum claims. The southern coastal state says its system has collapsed, and many people are moving north without being registered. Northern states, where most of them want to go, have begun closing their borders. A neighbouring state outside the union, through which many travel, offers to host more people in exchange for money and visa-free travel for its citizens. The union’s leaders meet in ten days to agree a common response."
+        "en": "In a single summer, more than half a million people have arrived by sea on the southern coast of a union of European states, many of them fleeing wars in nearby regions. Under the union’s rules, the country where they first arrive must register them and handle their asylum claims. The southern coastal state says its system has collapsed, and many people are moving north without being registered. Northern states, where most of them want to go, have begun closing their borders. A neighbouring state outside the union, through which many travel, offers to host more people in exchange for money and visa-free travel for its citizens. The union’s leaders meet in ten days to agree a common response.",
+        "ru": "За одно лето более полумиллиона человек прибыли морем на южное побережье союза европейских государств; многие из них бегут от войн в соседних регионах. По правилам союза страна, в которую человек прибыл первой, должна его зарегистрировать и рассмотреть его ходатайство об убежище. Южное прибрежное государство заявляет, что его система рухнула, и многие люди уходят на север незарегистрированными. Северные государства, куда стремится большинство прибывающих, начали закрывать свои границы. Соседнее государство за пределами союза, через которое проходят многие, предлагает принять больше людей в обмен на деньги и безвизовый режим для своих граждан. Через десять дней лидеры союза соберутся, чтобы согласовать общий ответ."
       },
       "parties": [
         {
           "name": {
-            "en": "Southern coastal state"
+            "en": "Southern coastal state",
+            "ru": "Южное прибрежное государство"
           },
           "position": {
-            "en": "Arrivals must be shared among all member states through mandatory quotas."
+            "en": "Arrivals must be shared among all member states through mandatory quotas.",
+            "ru": "Прибывающих нужно распределить между всеми государствами-членами по обязательным квотам."
           },
           "constraint": {
-            "en": "Its government faces an election and a rising anti-migration party."
+            "en": "Its government faces an election and a rising anti-migration party.",
+            "ru": "Его правительству предстоят выборы, и растёт популярность партии, выступающей против миграции."
           }
         },
         {
           "name": {
-            "en": "Northern destination states"
+            "en": "Northern destination states",
+            "ru": "Северные государства назначения"
           },
           "position": {
-            "en": "Stronger control of the union’s external border before any sharing."
+            "en": "Stronger control of the union’s external border before any sharing.",
+            "ru": "Сначала усилить контроль на внешней границе союза, потом — распределение."
           },
           "constraint": {
-            "en": "Their public is divided between welcome and fear."
+            "en": "Their public is divided between welcome and fear.",
+            "ru": "Их общество разделено между готовностью помочь и страхом."
           }
         },
         {
           "name": {
-            "en": "Eastern member states"
+            "en": "Eastern member states",
+            "ru": "Восточные государства-члены"
           },
           "position": {
-            "en": "No mandatory quotas; they will contribute money, but not accept arrivals."
+            "en": "No mandatory quotas; they will contribute money, but not accept arrivals.",
+            "ru": "Никаких обязательных квот; они готовы внести деньги, но не принимать людей."
           },
           "constraint": {
-            "en": "They see quotas as a question of sovereignty and fear being outvoted."
+            "en": "They see quotas as a question of sovereignty and fear being outvoted.",
+            "ru": "Они видят в квотах вопрос суверенитета и боятся оказаться в меньшинстве при голосовании."
           }
         },
         {
           "name": {
-            "en": "Neighbouring transit state"
+            "en": "Neighbouring transit state",
+            "ru": "Соседнее транзитное государство"
           },
           "position": {
-            "en": "Financial support and visa-free travel in exchange for cooperation."
+            "en": "Financial support and visa-free travel in exchange for cooperation.",
+            "ru": "Финансовая поддержка и безвизовый режим в обмен на сотрудничество."
           },
           "constraint": {
-            "en": "It already hosts millions of refugees."
+            "en": "It already hosts millions of refugees.",
+            "ru": "Оно уже принимает миллионы беженцев."
           }
         }
       ],
@@ -486,14 +580,17 @@
           "role": {
             "code": "ENV",
             "title": {
-              "en": "Special envoy of the union’s presidency"
+              "en": "Special envoy of the union’s presidency",
+              "ru": "Специальный посланник председательства союза"
             },
             "brief": {
-              "en": "Your task is to find a compromise every member state can sign at the summit. You can propose any package, but decisions require the agreement of all member states."
+              "en": "Your task is to find a compromise every member state can sign at the summit. You can propose any package, but decisions require the agreement of all member states.",
+              "ru": "Ваша задача — найти компромисс, который все государства-члены смогут подписать на саммите. Вы можете предложить любой пакет мер, но решения требуют согласия всех государств-членов."
             }
           },
           "development": {
-            "en": "A boat capsizes near the southern coast and more than 300 people die. Images of the tragedy are on every front page, and the pressure to act is enormous."
+            "en": "A boat capsizes near the southern coast and more than 300 people die. Images of the tragedy are on every front page, and the pressure to act is enormous.",
+            "ru": "У южного побережья переворачивается лодка, погибают более 300 человек. Фотографии трагедии — на первых полосах всех газет, и давление с требованием действовать огромно."
           },
           "internal": {
             "difficulty": null,
@@ -508,14 +605,17 @@
           "role": {
             "code": "REP",
             "title": {
-              "en": "Representative of the neighbouring transit state"
+              "en": "Representative of the neighbouring transit state",
+              "ru": "Представитель соседнего транзитного государства"
             },
             "brief": {
-              "en": "You represent a state outside the union. Your government wants money and visa-free travel and is ready to take people back — but it refuses to be seen as the union’s “waiting room”."
+              "en": "You represent a state outside the union. Your government wants money and visa-free travel and is ready to take people back — but it refuses to be seen as the union’s “waiting room”.",
+              "ru": "Вы представляете государство за пределами союза. Ваше правительство хочет денег и безвизового режима и готово принимать людей обратно — но отказывается выглядеть «залом ожидания» союза."
             }
           },
           "development": {
-            "en": "A leaked document shows that two northern states are quietly negotiating an arrangement along a different route that would make your country far less important."
+            "en": "A leaked document shows that two northern states are quietly negotiating an arrangement along a different route that would make your country far less important.",
+            "ru": "Утёкший документ показывает, что два северных государства втайне договариваются о другом маршруте, из-за которого ваша страна станет гораздо менее важной."
           },
           "internal": {
             "difficulty": null,
@@ -533,54 +633,68 @@
       "period": "2010",
       "region": "AS",
       "title": {
-        "en": "An incident at the fishing grounds"
+        "en": "An incident at the fishing grounds",
+        "ru": "Инцидент в районе промысла"
       },
       "context": {
-        "en": "Two neighbouring states in East Asia both claim a group of small islands and the rich fishing grounds around them. For years, fishermen from both countries shared the waters under an informal understanding. This morning, a coast guard vessel of one state detained a fishing boat from the other after a collision damaged the coast guard ship. The captain and twelve crew are being held on shore. One state says the captain broke its law in its own waters and must stand trial; the other says the arrest was illegal because the waters are disputed. Both governments face strong nationalist pressure at home. Trade between them is worth billions a year, and a regional summit is due next month."
+        "en": "Two neighbouring states in East Asia both claim a group of small islands and the rich fishing grounds around them. For years, fishermen from both countries shared the waters under an informal understanding. This morning, a coast guard vessel of one state detained a fishing boat from the other after a collision damaged the coast guard ship. The captain and twelve crew are being held on shore. One state says the captain broke its law in its own waters and must stand trial; the other says the arrest was illegal because the waters are disputed. Both governments face strong nationalist pressure at home. Trade between them is worth billions a year, and a regional summit is due next month.",
+        "ru": "Два соседних государства Восточной Азии претендуют на группу небольших островов и богатые рыбой воды вокруг них. Годами рыбаки обеих стран пользовались этими водами по неформальной договорённости. Сегодня утром судно береговой охраны одного государства задержало рыболовецкое судно другого после столкновения, повредившего корабль береговой охраны. Капитан и двенадцать членов экипажа удерживаются на берегу. Одно государство заявляет, что капитан нарушил его закон в его собственных водах и должен предстать перед судом; другое — что задержание незаконно, поскольку воды спорные. Оба правительства испытывают сильное националистическое давление внутри страны. Торговля между ними оценивается в миллиарды в год, а через месяц должен пройти региональный саммит."
       },
       "parties": [
         {
           "name": {
-            "en": "The detaining state"
+            "en": "The detaining state",
+            "ru": "Задержавшее государство"
           },
           "position": {
-            "en": "The captain must be tried under its law."
+            "en": "The captain must be tried under its law.",
+            "ru": "Капитана нужно судить по его законам."
           },
           "constraint": {
-            "en": "Releasing him without a trial would look like admitting the waters are disputed."
+            "en": "Releasing him without a trial would look like admitting the waters are disputed.",
+            "ru": "Освобождение без суда выглядело бы как признание того, что воды спорные."
           }
         },
         {
           "name": {
-            "en": "The fishermen’s state"
+            "en": "The fishermen’s state",
+            "ru": "Государство рыбаков"
           },
           "position": {
-            "en": "Immediate, unconditional release of the captain and crew."
+            "en": "Immediate, unconditional release of the captain and crew.",
+            "ru": "Немедленное и безоговорочное освобождение капитана и экипажа."
           },
           "constraint": {
-            "en": "Its public is demanding a strong response."
+            "en": "Its public is demanding a strong response.",
+            "ru": "Общество требует жёсткого ответа."
           }
         },
         {
           "name": {
-            "en": "Fishing communities on both sides"
+            "en": "Fishing communities on both sides",
+            "ru": "Рыболовецкие общины обеих стран"
           },
           "position": {
-            "en": "To fish safely, without incidents."
+            "en": "To fish safely, without incidents.",
+            "ru": "Безопасный промысел без инцидентов."
           },
           "constraint": {
-            "en": "Their income depends on a season that ends soon."
+            "en": "Their income depends on a season that ends soon.",
+            "ru": "Их доход зависит от сезона, который скоро закончится."
           }
         },
         {
           "name": {
-            "en": "Business groups in both countries"
+            "en": "Business groups in both countries",
+            "ru": "Деловые круги обеих стран"
           },
           "position": {
-            "en": "Stability and no trade sanctions."
+            "en": "Stability and no trade sanctions.",
+            "ru": "Стабильность и отсутствие торговых санкций."
           },
           "constraint": {
-            "en": "They cannot speak publicly without being called unpatriotic."
+            "en": "They cannot speak publicly without being called unpatriotic.",
+            "ru": "Они не могут высказываться публично, не рискуя прослыть непатриотичными."
           }
         }
       ],
@@ -591,14 +705,17 @@
           "role": {
             "code": "ADV",
             "title": {
-              "en": "Adviser to the foreign minister of the detaining state"
+              "en": "Adviser to the foreign minister of the detaining state",
+              "ru": "Советник министра иностранных дел задержавшего государства"
             },
             "brief": {
-              "en": "Your minister must decide within 48 hours whether the trial goes ahead. You can recommend any option and use diplomatic channels, but you cannot overrule the courts."
+              "en": "Your minister must decide within 48 hours whether the trial goes ahead. You can recommend any option and use diplomatic channels, but you cannot overrule the courts.",
+              "ru": "В течение 48 часов ваш министр должен решить, будет ли суд. Вы можете рекомендовать любой вариант и использовать дипломатические каналы, но не можете отменить решение суда."
             }
           },
           "development": {
-            "en": "The other state halts exports of a rare material that your electronics industry depends on. It denies any connection to the incident."
+            "en": "The other state halts exports of a rare material that your electronics industry depends on. It denies any connection to the incident.",
+            "ru": "Другое государство прекращает экспорт редкого материала, от которого зависит электронная промышленность вашей страны. Оно отрицает связь с инцидентом."
           },
           "internal": {
             "difficulty": null,
@@ -613,14 +730,17 @@
           "role": {
             "code": "TPC",
             "title": {
-              "en": "Envoy of a third country trusted by both sides"
+              "en": "Envoy of a third country trusted by both sides",
+              "ru": "Посланник третьей страны, которой доверяют обе стороны"
             },
             "brief": {
-              "en": "Both governments have privately asked you to help find a way out. Neither will be seen requesting mediation in public, so everything you do must stay informal."
+              "en": "Both governments have privately asked you to help find a way out. Neither will be seen requesting mediation in public, so everything you do must stay informal.",
+              "ru": "Оба правительства в частном порядке попросили вас помочь найти выход. Ни одно из них не станет публично просить о посредничестве, поэтому всё, что вы делаете, должно оставаться неформальным."
             }
           },
           "development": {
-            "en": "A video of the collision appears online. It is unclear, and both sides say it proves they are right."
+            "en": "A video of the collision appears online. It is unclear, and both sides say it proves they are right.",
+            "ru": "В интернете появляется видео столкновения. Оно нечёткое, и обе стороны утверждают, что оно доказывает их правоту."
           },
           "internal": {
             "difficulty": null,
@@ -638,54 +758,68 @@
       "period": "2026",
       "region": "AR",
       "title": {
-        "en": "A stranded tanker in the strait"
+        "en": "A stranded tanker in the strait",
+        "ru": "Брошенный танкер в проливе"
       },
       "context": {
-        "en": "An ageing oil tanker loaded with over a million barrels of crude has lost power and is anchored in a narrow strait off the Arabian Peninsula, one of the world’s busiest shipping routes. Its hull is badly corroded, and engineers warn that it could break apart within weeks. A spill would destroy fisheries, shut down desalination plants that supply drinking water to millions, and block the strait. The ship’s registered owner, a company based abroad, says it has no money. The coastline nearest to the tanker is controlled by local authorities who are not recognised by the national government, and each side claims the right to decide. An international organisation has a plan to pump the oil into another ship, but only part of the money has been raised."
+        "en": "An ageing oil tanker loaded with over a million barrels of crude has lost power and is anchored in a narrow strait off the Arabian Peninsula, one of the world’s busiest shipping routes. Its hull is badly corroded, and engineers warn that it could break apart within weeks. A spill would destroy fisheries, shut down desalination plants that supply drinking water to millions, and block the strait. The ship’s registered owner, a company based abroad, says it has no money. The coastline nearest to the tanker is controlled by local authorities who are not recognised by the national government, and each side claims the right to decide. An international organisation has a plan to pump the oil into another ship, but only part of the money has been raised.",
+        "ru": "Старый нефтяной танкер с более чем миллионом баррелей сырой нефти на борту потерял ход и стоит на якоре в узком проливе у берегов Аравийского полуострова — на одном из самых оживлённых морских путей мира. Корпус сильно проржавел, и инженеры предупреждают, что судно может развалиться в ближайшие недели. Разлив уничтожит рыбный промысел, остановит опреснительные станции, снабжающие питьевой водой миллионы людей, и перекроет пролив. Зарегистрированный владелец судна — компания, базирующаяся за рубежом, — заявляет, что у неё нет денег. Ближайшее к танкеру побережье контролируют местные власти, не признанные национальным правительством, и каждая сторона претендует на право принимать решения. У международной организации есть план перекачать нефть на другое судно, но собрана лишь часть необходимых средств."
       },
       "parties": [
         {
           "name": {
-            "en": "Authorities controlling the coast"
+            "en": "Authorities controlling the coast",
+            "ru": "Власти, контролирующие побережье"
           },
           "position": {
-            "en": "They must approve any operation, and they want the value of the oil."
+            "en": "They must approve any operation, and they want the value of the oil.",
+            "ru": "Любая операция требует их одобрения, и они хотят получить стоимость нефти."
           },
           "constraint": {
-            "en": "They fear the operation could be used against them."
+            "en": "They fear the operation could be used against them.",
+            "ru": "Они опасаются, что операцию могут использовать против них."
           }
         },
         {
           "name": {
-            "en": "The recognised national government"
+            "en": "The recognised national government",
+            "ru": "Признанное национальное правительство"
           },
           "position": {
-            "en": "The oil belongs to the state and must not benefit its rivals."
+            "en": "The oil belongs to the state and must not benefit its rivals.",
+            "ru": "Нефть принадлежит государству и не должна принести выгоду его противникам."
           },
           "constraint": {
-            "en": "It has no control over the area where the tanker lies."
+            "en": "It has no control over the area where the tanker lies.",
+            "ru": "Оно не контролирует район, где стоит танкер."
           }
         },
         {
           "name": {
-            "en": "Neighbouring coastal state"
+            "en": "Neighbouring coastal state",
+            "ru": "Соседнее прибрежное государство"
           },
           "position": {
-            "en": "The oil must be removed immediately."
+            "en": "The oil must be removed immediately.",
+            "ru": "Нефть должна быть откачана немедленно."
           },
           "constraint": {
-            "en": "It will not fund anything that could benefit authorities it considers hostile."
+            "en": "It will not fund anything that could benefit authorities it considers hostile.",
+            "ru": "Оно не станет финансировать ничего, что может принести выгоду властям, которые оно считает враждебными."
           }
         },
         {
           "name": {
-            "en": "International organisation"
+            "en": "International organisation",
+            "ru": "Международная организация"
           },
           "position": {
-            "en": "A neutral technical operation, with ownership of the oil decided later."
+            "en": "A neutral technical operation, with ownership of the oil decided later.",
+            "ru": "Нейтральная техническая операция, а вопрос о собственности на нефть — позже."
           },
           "constraint": {
-            "en": "It has raised only 60% of the money needed."
+            "en": "It has raised only 60% of the money needed.",
+            "ru": "Она собрала лишь 60% необходимых средств."
           }
         }
       ],
@@ -696,14 +830,17 @@
           "role": {
             "code": "IOR",
             "title": {
-              "en": "Head of the international rescue operation"
+              "en": "Head of the international rescue operation",
+              "ru": "Руководитель международной спасательной операции"
             },
             "brief": {
-              "en": "You lead the technical team. Your plan is ready, but you need permission from both the coastal authorities and the national government, and the rest of the money. You cannot take sides on who owns the oil."
+              "en": "You lead the technical team. Your plan is ready, but you need permission from both the coastal authorities and the national government, and the rest of the money. You cannot take sides on who owns the oil.",
+              "ru": "Вы руководите технической группой. Ваш план готов, но вам нужно разрешение и властей побережья, и национального правительства, а также недостающие средства. Вы не можете занимать ничью сторону в вопросе о том, кому принадлежит нефть."
             }
           },
           "development": {
-            "en": "A storm is forecast to reach the strait in ten days. Engineers say the hull may not survive it."
+            "en": "A storm is forecast to reach the strait in ten days. Engineers say the hull may not survive it.",
+            "ru": "Через десять дней к проливу подойдёт шторм. Инженеры говорят, что корпус может его не выдержать."
           },
           "internal": {
             "difficulty": null,
@@ -718,14 +855,17 @@
           "role": {
             "code": "HOD",
             "title": {
-              "en": "Head of the neighbouring state’s delegation"
+              "en": "Head of the neighbouring state’s delegation",
+              "ru": "Глава делегации соседнего государства"
             },
             "brief": {
-              "en": "Your country’s coast and water supply are directly at risk. You can offer ships and technical help, but your parliament has forbidden any payment that could benefit the authorities controlling the coast."
+              "en": "Your country’s coast and water supply are directly at risk. You can offer ships and technical help, but your parliament has forbidden any payment that could benefit the authorities controlling the coast.",
+              "ru": "Под прямой угрозой — побережье и водоснабжение вашей страны. Вы можете предложить суда и техническую помощь, но парламент запретил любые платежи, которые могут принести выгоду властям, контролирующим побережье."
             }
           },
           "development": {
-            "en": "The coastal authorities announce they will allow the operation only if the oil is sold and the money is paid to them."
+            "en": "The coastal authorities announce they will allow the operation only if the oil is sold and the money is paid to them.",
+            "ru": "Власти побережья объявляют, что разрешат операцию, только если нефть будет продана, а деньги выплачены им."
           },
           "internal": {
             "difficulty": null,
@@ -743,54 +883,68 @@
       "period": "2026",
       "region": "BK",
       "title": {
-        "en": "A pipeline across three borders"
+        "en": "A pipeline across three borders",
+        "ru": "Газопровод через три границы"
       },
       "context": {
-        "en": "A new gas pipeline has been built to carry gas from a supplier outside Europe through three Balkan states to markets in Central Europe. Construction is finished, but no gas can flow until the states agree on transit fees and on who operates each section. The middle transit state, which has the longest stretch, is demanding fees twice as high as the others. The first transit state wants a share of the gas for its own needs at a discount. A large European union of states says the pipeline must follow its energy rules, which forbid the supplier from also owning the pipeline; the supplier says it cannot accept this. Winter is approaching, and several states in the region depend on this gas."
+        "en": "A new gas pipeline has been built to carry gas from a supplier outside Europe through three Balkan states to markets in Central Europe. Construction is finished, but no gas can flow until the states agree on transit fees and on who operates each section. The middle transit state, which has the longest stretch, is demanding fees twice as high as the others. The first transit state wants a share of the gas for its own needs at a discount. A large European union of states says the pipeline must follow its energy rules, which forbid the supplier from also owning the pipeline; the supplier says it cannot accept this. Winter is approaching, and several states in the region depend on this gas.",
+        "ru": "Построен новый газопровод, по которому газ от поставщика из-за пределов Европы должен идти через три балканских государства на рынки Центральной Европы. Строительство завершено, но газ не пойдёт, пока государства не договорятся о тарифах на транзит и о том, кто управляет каждым участком. Среднее транзитное государство, через которое проходит самый длинный участок, требует тарифов вдвое выше, чем у остальных. Первое транзитное государство хочет получать часть газа для собственных нужд со скидкой. Крупный европейский союз государств настаивает, что газопровод должен соответствовать его энергетическим правилам, которые запрещают поставщику одновременно владеть трубой; поставщик заявляет, что не может с этим согласиться. Приближается зима, и несколько государств региона зависят от этого газа."
       },
       "parties": [
         {
           "name": {
-            "en": "The gas supplier"
+            "en": "The gas supplier",
+            "ru": "Поставщик газа"
           },
           "position": {
-            "en": "Long-term contracts and a controlling share in the pipeline."
+            "en": "Long-term contracts and a controlling share in the pipeline.",
+            "ru": "Долгосрочные контракты и контрольный пакет в газопроводе."
           },
           "constraint": {
-            "en": "It has already spent billions and needs revenue to start flowing."
+            "en": "It has already spent billions and needs revenue to start flowing.",
+            "ru": "Он уже потратил миллиарды и нуждается в доходах."
           }
         },
         {
           "name": {
-            "en": "The first transit state"
+            "en": "The first transit state",
+            "ru": "Первое транзитное государство"
           },
           "position": {
-            "en": "A discounted share of the gas for its own needs."
+            "en": "A discounted share of the gas for its own needs.",
+            "ru": "Часть газа для собственных нужд со скидкой."
           },
           "constraint": {
-            "en": "Its economy depends on cheap energy and it has few alternatives."
+            "en": "Its economy depends on cheap energy and it has few alternatives.",
+            "ru": "Его экономика зависит от дешёвой энергии, а альтернатив у него мало."
           }
         },
         {
           "name": {
-            "en": "The middle transit state"
+            "en": "The middle transit state",
+            "ru": "Среднее транзитное государство"
           },
           "position": {
-            "en": "Higher fees, because it carries the longest stretch and the greatest risk."
+            "en": "Higher fees, because it carries the longest stretch and the greatest risk.",
+            "ru": "Более высокие тарифы, поскольку у него самый длинный участок и самые большие риски."
           },
           "constraint": {
-            "en": "It is a candidate to join the European union and cannot openly break its rules."
+            "en": "It is a candidate to join the European union and cannot openly break its rules.",
+            "ru": "Оно является кандидатом на вступление в европейский союз и не может открыто нарушать его правила."
           }
         },
         {
           "name": {
-            "en": "The union’s energy commission"
+            "en": "The union’s energy commission",
+            "ru": "Энергетическая комиссия союза"
           },
           "position": {
-            "en": "The pipeline must follow union rules on competition and ownership."
+            "en": "The pipeline must follow union rules on competition and ownership.",
+            "ru": "Газопровод должен соответствовать правилам союза о конкуренции и собственности."
           },
           "constraint": {
-            "en": "Several of its member states want the gas quickly."
+            "en": "Several of its member states want the gas quickly.",
+            "ru": "Несколько её государств-членов хотят получить газ как можно скорее."
           }
         }
       ],
@@ -801,14 +955,17 @@
           "role": {
             "code": "MED",
             "title": {
-              "en": "Facilitator appointed by the regional energy community"
+              "en": "Facilitator appointed by the regional energy community",
+              "ru": "Модератор, назначенный региональным энергетическим сообществом"
             },
             "brief": {
-              "en": "All four parties accepted you as a neutral facilitator. You can call meetings and propose texts, but you cannot change union rules or set prices."
+              "en": "All four parties accepted you as a neutral facilitator. You can call meetings and propose texts, but you cannot change union rules or set prices.",
+              "ru": "Все четыре стороны приняли вас в качестве нейтрального модератора. Вы можете созывать встречи и предлагать тексты, но не можете менять правила союза или устанавливать цены."
             }
           },
           "development": {
-            "en": "An inspection finds a technical defect in the middle section. Repairs will take two months, and each side blames the others for the delay."
+            "en": "An inspection finds a technical defect in the middle section. Repairs will take two months, and each side blames the others for the delay.",
+            "ru": "Проверка выявляет технический дефект на среднем участке. Ремонт займёт два месяца, и каждая сторона обвиняет в задержке остальных."
           },
           "internal": {
             "difficulty": null,
@@ -823,14 +980,17 @@
           "role": {
             "code": "HOD",
             "title": {
-              "en": "Chief negotiator of the middle transit state"
+              "en": "Chief negotiator of the middle transit state",
+              "ru": "Главный переговорщик среднего транзитного государства"
             },
             "brief": {
-              "en": "Your government expects higher fees, but your country hopes to join the union within five years. You may agree to any fee your parliament will ratify, but you must not endanger the accession talks."
+              "en": "Your government expects higher fees, but your country hopes to join the union within five years. You may agree to any fee your parliament will ratify, but you must not endanger the accession talks.",
+              "ru": "Ваше правительство ждёт более высоких тарифов, но ваша страна надеется вступить в союз в течение пяти лет. Вы можете согласиться на любой тариф, который ратифицирует парламент, но не должны ставить под угрозу переговоры о вступлении."
             }
           },
           "development": {
-            "en": "The supplier announces it may send the gas through a different route that bypasses your country entirely."
+            "en": "The supplier announces it may send the gas through a different route that bypasses your country entirely.",
+            "ru": "Поставщик объявляет, что может направить газ по другому маршруту, в обход вашей страны."
           },
           "internal": {
             "difficulty": null,
@@ -848,54 +1008,68 @@
       "period": "2040",
       "region": "AF",
       "title": {
-        "en": "A river in a permanent drought"
+        "en": "A river in a permanent drought",
+        "ru": "Река в условиях постоянной засухи"
       },
       "context": {
-        "en": "Rainfall in a great African river basin has fallen by a third in twenty years, and scientists now call the drought permanent. The upstream state has completed a giant dam that will give electricity to millions of its citizens for the first time, and it wants to fill the reservoir quickly. Two downstream states depend on the river for almost all their drinking water and farming; one has already seen its harvests fail. An agreement from the 1950s gives the downstream states most of the water, but the upstream state never signed it. A river basin commission exists but has never met at ministerial level. International lenders will not fund any further projects in the basin without an agreement."
+        "en": "Rainfall in a great African river basin has fallen by a third in twenty years, and scientists now call the drought permanent. The upstream state has completed a giant dam that will give electricity to millions of its citizens for the first time, and it wants to fill the reservoir quickly. Two downstream states depend on the river for almost all their drinking water and farming; one has already seen its harvests fail. An agreement from the 1950s gives the downstream states most of the water, but the upstream state never signed it. A river basin commission exists but has never met at ministerial level. International lenders will not fund any further projects in the basin without an agreement.",
+        "ru": "За двадцать лет количество осадков в бассейне великой африканской реки сократилось на треть, и учёные теперь называют засуху постоянной. Государство в верхнем течении достроило гигантскую плотину, которая впервые даст электричество миллионам его граждан, и хочет быстро заполнить водохранилище. Два государства в нижнем течении получают из реки почти всю питьевую воду и воду для сельского хозяйства; в одном из них уже случился неурожай. Соглашение 1950-х годов отдаёт большую часть воды государствам нижнего течения, но государство верхнего течения его никогда не подписывало. Комиссия по бассейну реки существует, но ни разу не собиралась на уровне министров. Международные кредиторы не станут финансировать новые проекты в бассейне без соглашения."
       },
       "parties": [
         {
           "name": {
-            "en": "The upstream state"
+            "en": "The upstream state",
+            "ru": "Государство верхнего течения"
           },
           "position": {
-            "en": "The right to use the river for its development, with no veto from others."
+            "en": "The right to use the river for its development, with no veto from others.",
+            "ru": "Право использовать реку для своего развития без права вето других стран."
           },
           "constraint": {
-            "en": "Its government has made the dam a symbol of national pride."
+            "en": "Its government has made the dam a symbol of national pride.",
+            "ru": "Правительство сделало плотину символом национальной гордости."
           }
         },
         {
           "name": {
-            "en": "The first downstream state"
+            "en": "The first downstream state",
+            "ru": "Первое государство нижнего течения"
           },
           "position": {
-            "en": "A guaranteed minimum flow every year, based on the old agreement."
+            "en": "A guaranteed minimum flow every year, based on the old agreement.",
+            "ru": "Гарантированный минимальный сток каждый год на основе старого соглашения."
           },
           "constraint": {
-            "en": "95% of its water comes from the river."
+            "en": "95% of its water comes from the river.",
+            "ru": "95% его воды поступает из этой реки."
           }
         },
         {
           "name": {
-            "en": "The second downstream state"
+            "en": "The second downstream state",
+            "ru": "Второе государство нижнего течения"
           },
           "position": {
-            "en": "A fair share of water and cheap electricity from the dam."
+            "en": "A fair share of water and cheap electricity from the dam.",
+            "ru": "Справедливая доля воды и дешёвое электричество от плотины."
           },
           "constraint": {
-            "en": "It sits between two larger neighbours and fears being ignored."
+            "en": "It sits between two larger neighbours and fears being ignored.",
+            "ru": "Оно зажато между двумя более крупными соседями и боится, что его проигнорируют."
           }
         },
         {
           "name": {
-            "en": "River basin commission"
+            "en": "River basin commission",
+            "ru": "Комиссия по бассейну реки"
           },
           "position": {
-            "en": "Joint management of the river with shared data."
+            "en": "Joint management of the river with shared data.",
+            "ru": "Совместное управление рекой и общий доступ к данным."
           },
           "constraint": {
-            "en": "It has no budget and no power to enforce anything."
+            "en": "It has no budget and no power to enforce anything.",
+            "ru": "У неё нет ни бюджета, ни полномочий добиваться исполнения решений."
           }
         }
       ],
@@ -906,14 +1080,17 @@
           "role": {
             "code": "IOR",
             "title": {
-              "en": "Secretary-General of the river basin commission"
+              "en": "Secretary-General of the river basin commission",
+              "ru": "Генеральный секретарь комиссии по бассейну реки"
             },
             "brief": {
-              "en": "For the first time, ministers from all three states have agreed to meet under your chairmanship. You can set the agenda and propose a draft agreement, but any state can walk out at any time."
+              "en": "For the first time, ministers from all three states have agreed to meet under your chairmanship. You can set the agenda and propose a draft agreement, but any state can walk out at any time.",
+              "ru": "Впервые министры всех трёх государств согласились встретиться под вашим председательством. Вы можете определить повестку и предложить проект соглашения, но любое государство может покинуть переговоры в любой момент."
             }
           },
           "development": {
-            "en": "Satellite data suggest that the upstream state is filling the reservoir faster than it announced. It says the data are wrong."
+            "en": "Satellite data suggest that the upstream state is filling the reservoir faster than it announced. It says the data are wrong.",
+            "ru": "Спутниковые данные указывают на то, что государство верхнего течения заполняет водохранилище быстрее, чем объявляло. Оно утверждает, что данные неверны."
           },
           "internal": {
             "difficulty": null,
@@ -928,14 +1105,17 @@
           "role": {
             "code": "REP",
             "title": {
-              "en": "Representative of the second downstream state"
+              "en": "Representative of the second downstream state",
+              "ru": "Представитель второго государства нижнего течения"
             },
             "brief": {
-              "en": "Your country is the smallest of the three. You want water security and cheap electricity, and you would prefer not to take sides between your two larger neighbours."
+              "en": "Your country is the smallest of the three. You want water security and cheap electricity, and you would prefer not to take sides between your two larger neighbours.",
+              "ru": "Ваша страна — самая маленькая из трёх. Вам нужны водная безопасность и дешёвое электричество, и вы предпочли бы не вставать ни на чью сторону в споре двух крупных соседей."
             }
           },
           "development": {
-            "en": "Both larger neighbours privately offer you a separate deal if you support them at the meeting."
+            "en": "Both larger neighbours privately offer you a separate deal if you support them at the meeting.",
+            "ru": "Оба крупных соседа в частном порядке предлагают вам отдельную сделку, если вы поддержите их на встрече."
           },
           "internal": {
             "difficulty": null,
@@ -953,54 +1133,68 @@
       "period": "2040",
       "region": "LA",
       "title": {
-        "en": "Lithium and the forest"
+        "en": "Lithium and the forest",
+        "ru": "Литий и лес"
       },
       "context": {
-        "en": "Beneath a protected rainforest in a Latin American state lies one of the world’s largest lithium deposits, essential for batteries. Global demand has tripled, and a consortium of technology companies is offering an investment worth a fifth of the country’s GDP to extract it. The government sees a chance to escape decades of debt. But the forest is the home of indigenous peoples who hold legal rights to the land, and it feeds a river that supplies a neighbouring country. An international climate fund pays the country every year to keep the forest standing and would stop if large-scale mining begins. The constitution requires the government to consult indigenous communities, but not to obtain their agreement."
+        "en": "Beneath a protected rainforest in a Latin American state lies one of the world’s largest lithium deposits, essential for batteries. Global demand has tripled, and a consortium of technology companies is offering an investment worth a fifth of the country’s GDP to extract it. The government sees a chance to escape decades of debt. But the forest is the home of indigenous peoples who hold legal rights to the land, and it feeds a river that supplies a neighbouring country. An international climate fund pays the country every year to keep the forest standing and would stop if large-scale mining begins. The constitution requires the government to consult indigenous communities, but not to obtain their agreement.",
+        "ru": "Под охраняемым тропическим лесом в одном из государств Латинской Америки находится одно из крупнейших в мире месторождений лития, необходимого для аккумуляторов. Мировой спрос вырос втрое, и консорциум технологических компаний предлагает вложить в добычу сумму, равную пятой части ВВП страны. Правительство видит в этом шанс вырваться из многолетних долгов. Но лес — родной дом коренных народов, обладающих законными правами на эту землю, и он питает реку, снабжающую водой соседнюю страну. Международный климатический фонд ежегодно платит стране за сохранение леса и прекратит выплаты, если начнётся масштабная добыча. Конституция обязывает правительство консультироваться с коренными общинами, но не требует их согласия."
       },
       "parties": [
         {
           "name": {
-            "en": "The government"
+            "en": "The government",
+            "ru": "Правительство"
           },
           "position": {
-            "en": "Extraction should go ahead under strict environmental conditions."
+            "en": "Extraction should go ahead under strict environmental conditions.",
+            "ru": "Добыча должна начаться при строгих экологических условиях."
           },
           "constraint": {
-            "en": "A large debt repayment is due next year."
+            "en": "A large debt repayment is due next year.",
+            "ru": "В следующем году ему предстоит крупная выплата по долгу."
           }
         },
         {
           "name": {
-            "en": "Technology consortium"
+            "en": "Technology consortium",
+            "ru": "Технологический консорциум"
           },
           "position": {
-            "en": "An exclusive 30-year licence and stable taxes."
+            "en": "An exclusive 30-year licence and stable taxes.",
+            "ru": "Эксклюзивная лицензия на 30 лет и стабильные налоги."
           },
           "constraint": {
-            "en": "Two other countries are competing for its investment."
+            "en": "Two other countries are competing for its investment.",
+            "ru": "За его инвестиции конкурируют ещё две страны."
           }
         },
         {
           "name": {
-            "en": "Indigenous federation"
+            "en": "Indigenous federation",
+            "ru": "Федерация коренных народов"
           },
           "position": {
-            "en": "No mining without the communities’ free, prior and informed consent."
+            "en": "No mining without the communities’ free, prior and informed consent.",
+            "ru": "Никакой добычи без свободного, предварительного и осознанного согласия общин."
           },
           "constraint": {
-            "en": "Some communities want jobs and a share of the profits."
+            "en": "Some communities want jobs and a share of the profits.",
+            "ru": "Некоторые общины хотят рабочих мест и доли в прибыли."
           }
         },
         {
           "name": {
-            "en": "International climate fund"
+            "en": "International climate fund",
+            "ru": "Международный климатический фонд"
           },
           "position": {
-            "en": "Payments continue only if deforestation stays within agreed limits."
+            "en": "Payments continue only if deforestation stays within agreed limits.",
+            "ru": "Выплаты продолжаются, только если вырубка леса не превышает согласованных пределов."
           },
           "constraint": {
-            "en": "Its donors also need lithium for the energy transition."
+            "en": "Its donors also need lithium for the energy transition.",
+            "ru": "Его донорам тоже нужен литий для энергетического перехода."
           }
         }
       ],
@@ -1011,14 +1205,17 @@
           "role": {
             "code": "MED",
             "title": {
-              "en": "Independent mediator of the consultation"
+              "en": "Independent mediator of the consultation",
+              "ru": "Независимый посредник консультаций"
             },
             "brief": {
-              "en": "You were appointed to lead the consultation between the government, the consortium and the indigenous federation. You can shape the process and propose conditions, but the final decision is not yours."
+              "en": "You were appointed to lead the consultation between the government, the consortium and the indigenous federation. You can shape the process and propose conditions, but the final decision is not yours.",
+              "ru": "Вас назначили руководить консультациями между правительством, консорциумом и федерацией коренных народов. Вы можете выстраивать процесс и предлагать условия, но окончательное решение принимаете не вы."
             }
           },
           "development": {
-            "en": "Young indigenous activists block the only road into the area. The federation’s elders say they did not approve the blockade."
+            "en": "Young indigenous activists block the only road into the area. The federation’s elders say they did not approve the blockade.",
+            "ru": "Молодые активисты коренных народов перекрывают единственную дорогу в этот район. Старейшины федерации заявляют, что не одобряли блокаду."
           },
           "internal": {
             "difficulty": null,
@@ -1033,14 +1230,17 @@
           "role": {
             "code": "ADV",
             "title": {
-              "en": "Adviser to the technology consortium"
+              "en": "Adviser to the technology consortium",
+              "ru": "Советник технологического консорциума"
             },
             "brief": {
-              "en": "You advise the consortium’s board on whether and how to invest. The board wants the licence, but fears the damage to its reputation of a conflict with indigenous communities."
+              "en": "You advise the consortium’s board on whether and how to invest. The board wants the licence, but fears the damage to its reputation of a conflict with indigenous communities.",
+              "ru": "Вы консультируете совет директоров консорциума о том, стоит ли инвестировать и на каких условиях. Совет хочет получить лицензию, но опасается ущерба для репутации в случае конфликта с коренными общинами."
             }
           },
           "development": {
-            "en": "A rival consortium offers the government a smaller project with less impact on the forest, and the President says he is “considering all options”."
+            "en": "A rival consortium offers the government a smaller project with less impact on the forest, and the President says he is “considering all options”.",
+            "ru": "Конкурирующий консорциум предлагает правительству проект меньшего масштаба с меньшим ущербом для леса, и президент заявляет, что «рассматривает все варианты»."
           },
           "internal": {
             "difficulty": null,
@@ -1058,54 +1258,68 @@
       "period": "2050",
       "region": "EU",
       "title": {
-        "en": "Climate relocation"
+        "en": "Climate relocation",
+        "ru": "Климатическое переселение"
       },
       "context": {
-        "en": "By 2050, summer temperatures in southern Europe regularly pass 48°C, and several regions have lost their water supply. Hundreds of thousands of people from one southern state have already moved north on their own, and the government expects two million more to relocate within ten years. As citizens of a union of European states they may live anywhere in the union, but northern regions face housing shortages and rising tension. The southern state wants a union-wide relocation fund and guarantees that its citizens keep their full rights. Some northern states want to limit the right to move. The union must agree a “climate mobility pact” before next summer."
+        "en": "By 2050, summer temperatures in southern Europe regularly pass 48°C, and several regions have lost their water supply. Hundreds of thousands of people from one southern state have already moved north on their own, and the government expects two million more to relocate within ten years. As citizens of a union of European states they may live anywhere in the union, but northern regions face housing shortages and rising tension. The southern state wants a union-wide relocation fund and guarantees that its citizens keep their full rights. Some northern states want to limit the right to move. The union must agree a “climate mobility pact” before next summer.",
+        "ru": "К 2050 году летняя температура на юге Европы регулярно превышает 48 °C, а несколько регионов лишились источников воды. Сотни тысяч жителей одного южного государства уже переехали на север самостоятельно, и правительство ожидает, что в течение десяти лет переселиться придётся ещё двум миллионам. Как граждане союза европейских государств, они могут жить в любой его части, но северные регионы страдают от нехватки жилья и растущей напряжённости. Южное государство хочет создать общесоюзный фонд переселения и гарантировать своим гражданам сохранение всех прав. Некоторые северные государства хотят ограничить право на переезд. Союз должен согласовать «пакт о климатической мобильности» до следующего лета."
       },
       "parties": [
         {
           "name": {
-            "en": "The southern state"
+            "en": "The southern state",
+            "ru": "Южное государство"
           },
           "position": {
-            "en": "A union-wide fund and full rights for relocated citizens."
+            "en": "A union-wide fund and full rights for relocated citizens.",
+            "ru": "Общесоюзный фонд и полные права для переселившихся граждан."
           },
           "constraint": {
-            "en": "It fears losing its young people and its future tax base."
+            "en": "It fears losing its young people and its future tax base.",
+            "ru": "Оно боится потерять молодёжь и будущую налоговую базу."
           }
         },
         {
           "name": {
-            "en": "Northern receiving states"
+            "en": "Northern receiving states",
+            "ru": "Северные принимающие государства"
           },
           "position": {
-            "en": "An orderly process, with limits on arrivals in any one region."
+            "en": "An orderly process, with limits on arrivals in any one region.",
+            "ru": "Упорядоченный процесс с ограничениями на число прибывающих в каждый регион."
           },
           "constraint": {
-            "en": "Local elections show strong support for restricting movement."
+            "en": "Local elections show strong support for restricting movement.",
+            "ru": "Местные выборы показывают сильную поддержку ограничений на переезд."
           }
         },
         {
           "name": {
-            "en": "The union’s commission"
+            "en": "The union’s commission",
+            "ru": "Комиссия союза"
           },
           "position": {
-            "en": "Protect free movement, a founding principle of the union."
+            "en": "Protect free movement, a founding principle of the union.",
+            "ru": "Защитить свободу передвижения — один из основополагающих принципов союза."
           },
           "constraint": {
-            "en": "The fund needs the agreement of every member state."
+            "en": "The fund needs the agreement of every member state.",
+            "ru": "Для создания фонда нужно согласие всех государств-членов."
           }
         },
         {
           "name": {
-            "en": "Association of relocated communities"
+            "en": "Association of relocated communities",
+            "ru": "Ассоциация переселившихся общин"
           },
           "position": {
-            "en": "To be treated as citizens, not as refugees, and to have a voice in the pact."
+            "en": "To be treated as citizens, not as refugees, and to have a voice in the pact.",
+            "ru": "Чтобы к ним относились как к гражданам, а не как к беженцам, и чтобы у них был голос при подготовке пакта."
           },
           "constraint": {
-            "en": "It has no formal status in the negotiations."
+            "en": "It has no formal status in the negotiations.",
+            "ru": "У неё нет официального статуса на переговорах."
           }
         }
       ],
@@ -1116,14 +1330,17 @@
           "role": {
             "code": "ENV",
             "title": {
-              "en": "Special envoy of the union’s commission"
+              "en": "Special envoy of the union’s commission",
+              "ru": "Специальный посланник комиссии союза"
             },
             "brief": {
-              "en": "You must prepare a draft pact that all member states can accept. You may propose any mix of funding, rules and incentives, but you may not propose limits on free movement."
+              "en": "You must prepare a draft pact that all member states can accept. You may propose any mix of funding, rules and incentives, but you may not propose limits on free movement.",
+              "ru": "Вам нужно подготовить проект пакта, приемлемый для всех государств-членов. Вы можете предложить любое сочетание финансирования, правил и стимулов, но не можете предлагать ограничения свободы передвижения."
             }
           },
           "development": {
-            "en": "A heatwave kills thousands in the south. The same week, a northern town votes in a referendum to refuse new residents."
+            "en": "A heatwave kills thousands in the south. The same week, a northern town votes in a referendum to refuse new residents.",
+            "ru": "Аномальная жара уносит тысячи жизней на юге. На той же неделе один из северных городов на референдуме голосует против приёма новых жителей."
           },
           "internal": {
             "difficulty": null,
@@ -1138,14 +1355,17 @@
           "role": {
             "code": "JUN",
             "title": {
-              "en": "Junior member of a northern delegation, asked to propose an alternative strategy"
+              "en": "Junior member of a northern delegation, asked to propose an alternative strategy",
+              "ru": "Младший член одной из северных делегаций, которому поручено предложить альтернативную стратегию"
             },
             "brief": {
-              "en": "Your head of delegation thinks your country’s current position — limits on arrivals — will fail. You have been asked to propose an alternative that protects your country’s interests without breaking union principles."
+              "en": "Your head of delegation thinks your country’s current position — limits on arrivals — will fail. You have been asked to propose an alternative that protects your country’s interests without breaking union principles.",
+              "ru": "Глава вашей делегации считает, что нынешняя позиция вашей страны — ограничения на число прибывающих — провалится. Вам поручили предложить альтернативу, которая защитит интересы вашей страны, не нарушая принципов союза."
             }
           },
           "development": {
-            "en": "Drought hits your own country’s southern provinces, and your government now has to relocate some of its own citizens."
+            "en": "Drought hits your own country’s southern provinces, and your government now has to relocate some of its own citizens.",
+            "ru": "Засуха поражает южные провинции вашей собственной страны, и теперь вашему правительству приходится переселять часть своих граждан."
           },
           "internal": {
             "difficulty": null,
@@ -1163,54 +1383,68 @@
       "period": "2050",
       "region": "AS",
       "title": {
-        "en": "Rules for autonomous systems"
+        "en": "Rules for autonomous systems",
+        "ru": "Правила для автономных систем"
       },
       "context": {
-        "en": "Autonomous vessels and drones now patrol the busy seas of Asia, operated by several states and private companies. They make decisions in seconds, without human approval. Last month, two autonomous patrol vessels belonging to different states nearly collided, and one fired warning shots on its own. No one was hurt, but the incident showed that there are no shared rules for how such systems behave towards each other. Two leading technology powers each want to set the rules, but they distrust each other. Smaller coastal states fear being caught in between. A regional forum has convened talks on a code of conduct, and a global technology company whose software runs many of these systems has asked to take part."
+        "en": "Autonomous vessels and drones now patrol the busy seas of Asia, operated by several states and private companies. They make decisions in seconds, without human approval. Last month, two autonomous patrol vessels belonging to different states nearly collided, and one fired warning shots on its own. No one was hurt, but the incident showed that there are no shared rules for how such systems behave towards each other. Two leading technology powers each want to set the rules, but they distrust each other. Smaller coastal states fear being caught in between. A regional forum has convened talks on a code of conduct, and a global technology company whose software runs many of these systems has asked to take part.",
+        "ru": "Автономные суда и беспилотники теперь патрулируют оживлённые моря Азии; ими управляют несколько государств и частных компаний. Они принимают решения за секунды, без одобрения человека. В прошлом месяце два автономных патрульных судна разных государств едва не столкнулись, и одно из них самостоятельно открыло предупредительный огонь. Никто не пострадал, но инцидент показал, что общих правил поведения таких систем по отношению друг к другу не существует. Две ведущие технологические державы хотят сами устанавливать правила, но не доверяют друг другу. Небольшие прибрежные государства боятся оказаться между ними. Региональный форум созвал переговоры о кодексе поведения, и глобальная технологическая компания, чьё программное обеспечение управляет многими из этих систем, попросила допустить её к ним."
       },
       "parties": [
         {
           "name": {
-            "en": "First technology power"
+            "en": "First technology power",
+            "ru": "Первая технологическая держава"
           },
           "position": {
-            "en": "Voluntary standards set by the countries that build the systems."
+            "en": "Voluntary standards set by the countries that build the systems.",
+            "ru": "Добровольные стандарты, которые устанавливают страны — разработчики систем."
           },
           "constraint": {
-            "en": "Its military insists that the systems’ capabilities stay secret."
+            "en": "Its military insists that the systems’ capabilities stay secret.",
+            "ru": "Её военные настаивают на секретности возможностей систем."
           }
         },
         {
           "name": {
-            "en": "Second technology power"
+            "en": "Second technology power",
+            "ru": "Вторая технологическая держава"
           },
           "position": {
-            "en": "A binding treaty with limits on armed autonomous systems."
+            "en": "A binding treaty with limits on armed autonomous systems.",
+            "ru": "Обязательный договор с ограничениями на вооружённые автономные системы."
           },
           "constraint": {
-            "en": "It is behind in the technology and fears being locked into second place."
+            "en": "It is behind in the technology and fears being locked into second place.",
+            "ru": "Она отстаёт в технологиях и боится навсегда остаться на втором месте."
           }
         },
         {
           "name": {
-            "en": "Smaller coastal states"
+            "en": "Smaller coastal states",
+            "ru": "Небольшие прибрежные государства"
           },
           "position": {
-            "en": "A human must approve any use of force near their waters."
+            "en": "A human must approve any use of force near their waters.",
+            "ru": "Любое применение силы вблизи их вод должен одобрять человек."
           },
           "constraint": {
-            "en": "They buy their systems from the two powers."
+            "en": "They buy their systems from the two powers.",
+            "ru": "Они покупают свои системы у двух держав."
           }
         },
         {
           "name": {
-            "en": "The technology company"
+            "en": "The technology company",
+            "ru": "Технологическая компания"
           },
           "position": {
-            "en": "Common technical standards that apply to everyone."
+            "en": "Common technical standards that apply to everyone.",
+            "ru": "Общие технические стандарты для всех."
           },
           "constraint": {
-            "en": "It sells to both powers and cannot be seen to favour either."
+            "en": "It sells to both powers and cannot be seen to favour either.",
+            "ru": "Она продаёт системы обеим державам и не может показать, что отдаёт предпочтение одной из них."
           }
         }
       ],
@@ -1221,14 +1455,17 @@
           "role": {
             "code": "IOR",
             "title": {
-              "en": "Chair of the regional forum’s talks"
+              "en": "Chair of the regional forum’s talks",
+              "ru": "Председатель переговоров регионального форума"
             },
             "brief": {
-              "en": "You chair the talks and are expected to produce a first draft code of conduct within three days. The forum works by consensus, so any participant can block agreement."
+              "en": "You chair the talks and are expected to produce a first draft code of conduct within three days. The forum works by consensus, so any participant can block agreement.",
+              "ru": "Вы председательствуете на переговорах, и от вас ждут первого проекта кодекса поведения в течение трёх дней. Форум работает на основе консенсуса, поэтому любой участник может заблокировать соглашение."
             }
           },
           "development": {
-            "en": "An autonomous drone crashes into a fishing boat in the waters of a smaller state. It is unclear who operated it, and neither power admits it was theirs."
+            "en": "An autonomous drone crashes into a fishing boat in the waters of a smaller state. It is unclear who operated it, and neither power admits it was theirs.",
+            "ru": "Автономный беспилотник врезается в рыболовецкое судно в водах одного из небольших государств. Неясно, кто им управлял, и ни одна из держав не признаёт, что он принадлежит ей."
           },
           "internal": {
             "difficulty": null,
@@ -1243,14 +1480,17 @@
           "role": {
             "code": "REP",
             "title": {
-              "en": "Representative of the smaller coastal states"
+              "en": "Representative of the smaller coastal states",
+              "ru": "Представитель небольших прибрежных государств"
             },
             "brief": {
-              "en": "You speak for a group of eight smaller states. Their interests are similar but not identical, and you may agree only to what all eight accept."
+              "en": "You speak for a group of eight smaller states. Their interests are similar but not identical, and you may agree only to what all eight accept.",
+              "ru": "Вы говорите от имени группы из восьми небольших государств. Их интересы похожи, но не одинаковы, и вы можете соглашаться только на то, что примут все восемь."
             }
           },
           "development": {
-            "en": "One of the two powers offers your group free access to its systems if you support its proposal. Three of your eight states want to accept."
+            "en": "One of the two powers offers your group free access to its systems if you support its proposal. Three of your eight states want to accept.",
+            "ru": "Одна из двух держав предлагает вашей группе бесплатный доступ к своим системам, если вы поддержите её предложение. Три из восьми ваших государств хотят согласиться."
           },
           "internal": {
             "difficulty": null,

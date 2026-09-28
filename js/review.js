@@ -1,8 +1,10 @@
 import { loadData, getSituations, t, periodLabel, regionLabel } from "./data.js";
+import { loadUi, getLang, ui } from "./i18n.js";
 
 const esc = (s) => String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
-await loadData();
+await Promise.all([loadUi(), loadData()]);
+document.getElementById("l-" + getLang())?.classList.add("is-active");
 const list = getSituations();
 
 document.getElementById("toc").innerHTML = list.map(s => `
@@ -20,13 +22,13 @@ document.getElementById("cases").innerHTML = list.map(s => `
     <p class="briefing__body">${esc(t(s.context))}</p>
     <p class="small muted">${t(s.context).length} characters</p>
     <section class="parties">
-      <h3 class="parties__h">Parties at the table</h3>
+      <h3 class="parties__h">${ui("parties")}</h3>
       <ul class="parties__list">
         ${s.parties.map(p => `
           <li class="party">
             <p class="party__name">${esc(t(p.name))}</p>
-            <p class="party__row"><span>Position</span>${esc(t(p.position))}</p>
-            <p class="party__row"><span>Constraint</span>${esc(t(p.constraint))}</p>
+            <p class="party__row"><span>${ui("position")}</span>${esc(t(p.position))}</p>
+            <p class="party__row"><span>${ui("constraint")}</span>${esc(t(p.constraint))}</p>
           </li>`).join("")}
       </ul>
     </section>
@@ -37,8 +39,8 @@ document.getElementById("cases").innerHTML = list.map(s => `
           <div class="variant">
             <span class="variant__code">${esc(v.id)} · v${v.version}</span>
             <h3>${esc(t(v.role.title))}</h3>
-            <p><span>Role brief</span>${esc(t(v.role.brief))}</p>
-            <p><span>New development</span>${esc(t(v.development))}</p>
+            <p><span>${ui("your_role")}</span>${esc(t(v.role.brief))}</p>
+            <p><span>${ui("new_development")}</span>${esc(t(v.development))}</p>
           </div>`).join("")}
       </div>
     </section>

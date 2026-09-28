@@ -7,9 +7,9 @@ Live URL (after setup): **https://gorchakovfund.github.io/negotiation-room/**
 
 ## Current status
 
-- Every screen is clickable.
+- Every screen is clickable, in English and Russian (EN / RU switch at the top right, works on any screen).
 - The 12 draft cases are in `data/situations.json`. Each one has a context, 4 parties (each with a public position and a constraint), and 2 role-and-development variants.
-- **Organisers' review page:** `review.html` (https://gorchakovfund.github.io/negotiation-room/review.html) shows all 12 cases and 24 variants on one page. It is not linked from the applicant site, but anyone with the address can open it.
+- **Organisers' review page:** `review.html` (https://gorchakovfund.github.io/negotiation-room/review.html) shows all 12 cases and 24 variants on one page (add `?lang=ru` for Russian). It is not linked from the applicant site, but anyone with the address can open it.
 
 | Not yet | Arrives in |
 |---|---|
@@ -17,14 +17,13 @@ Live URL (after setup): **https://gorchakovfund.github.io/negotiation-room/**
 | Variant tied to the application ID; real Case ID with check character | Stage 4 |
 | Dossier-style PDF print | Stage 5 |
 | Final visual design, reveal animations | Stage 6 |
-| Russian | Stage 7 |
 | Organiser / test mode (`?mode=test`), data validator | Stage 8 |
 
 The **Restart prototype** button in the footer is for testing only.
 
 ## Editing a case
 
-Open `data/situations.json` on GitHub, click the pencil icon, change the text between the quotation marks, and commit. Keep the quotation marks, commas and brackets exactly as they are. If the site shows "The case files could not be loaded", a comma or quotation mark was probably removed; undo the last commit.
+Open `data/situations.json` on GitHub, click the pencil icon, change the text between the quotation marks, and commit. Every text has an `"en"` and a `"ru"` version; edit both. Interface text (buttons, headings) is in `data/ui-text.json`. Keep the quotation marks, commas and brackets exactly as they are. If the site shows "The case files could not be loaded", a comma or quotation mark was probably removed; undo the last commit.
 
 ## Publish on GitHub Pages (one-time, about 5 minutes)
 

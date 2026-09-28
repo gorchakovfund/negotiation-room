@@ -14,17 +14,17 @@
   <link rel="stylesheet" href="css/screens.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
 
   <header class="topbar">
     <div class="topbar__brand">
       <span class="topbar__mark" aria-hidden="true">◆</span>
-      <span>Dialogue for the Future 2026</span>
+      <span data-i18n="brand">Dialogue for the Future 2026</span>
     </div>
-    <ol class="progress" id="progress" aria-label="Progress"></ol>
-    <div class="topbar__lang" aria-label="Language">
-      <button type="button" class="lang is-active" aria-pressed="true">EN</button>
-      <button type="button" class="lang" aria-pressed="false" disabled title="Russian arrives in Stage 7">RU</button>
+    <ol class="progress" id="progress" aria-label="Progress" data-i18n-label="progress_label"></ol>
+    <div class="topbar__lang" role="group" aria-label="Language" data-i18n-label="lang_label">
+      <button type="button" class="lang" data-lang="en" lang="en" aria-pressed="true">EN</button>
+      <button type="button" class="lang" data-lang="ru" lang="ru" aria-pressed="false">RU</button>
     </div>
   </header>
 
@@ -35,7 +35,7 @@
   <div id="announcer" class="visually-hidden" aria-live="polite"></div>
 
   <footer class="footer">
-    <span>Prototype · draft cases, not yet validated</span>
+    <span data-i18n="footer">Prototype · draft cases, not yet validated</span>
   </footer>
 
   <script type="module" src="js/main.js"></script>

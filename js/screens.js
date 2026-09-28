@@ -1,6 +1,6 @@
 // One render function per screen. Stage 7 moves all text into data/ui-text.json (RU/EN).
 import { state, set, next, back, go } from "./state.js";
-import { PERIODS, REGIONS, periodsWithCases, regionsFor } from "./placeholder-data.js";
+import { t, getRegions, periodsWithCases, regionsFor, periodLabel, regionLabel } from "./data.js";
 import { assignCase } from "./assign.js";
 import { CONFIG } from "./config.js";
 
@@ -11,6 +11,21 @@ const $ = (root, sel) => root.querySelector(sel);
 const idHtml = (id) => esc(id).replaceAll("-", "-<wbr>");
 
 const backBtn = `<button type="button" class="btn btn--ghost" data-action="back">Back</button>`;
+
+// "Parties at the table": public position + what constrains each party.
+// Real interests are deliberately left for the applicant to work out.
+const partiesHtml = (parties, headingTag = "h2") => `
+  <section class="parties" aria-label="Parties at the table">
+    <${headingTag} class="parties__h">Parties at the table</${headingTag}>
+    <ul class="parties__list">
+      ${parties.map(p => `
+        <li class="party">
+          <p class="party__name">${esc(t(p.name))}</p>
+          <p class="party__row"><span>Position</span>${esc(t(p.position))}</p>
+          <p class="party__row"><span>Constraint</span>${esc(t(p.constraint))}</p>
+        </li>`).join("")}
+    </ul>
+  </section>`;
 
 // Reveal screens have two phases: a teaser line + button, then the content.
 const reveal = { role: false, development: false };
@@ -88,8 +103,8 @@ export const SCREENS = {
               <div class="option">
                 <input type="radio" name="period" id="p-${p.code}" value="${p.code}" ${state.period === p.code ? "checked" : ""}>
                 <label for="p-${p.code}">
-                  <span class="option__key">${esc(p.label)}</span>
-                  <span class="option__desc">${esc(p.desc)}</span>
+                  <span class="option__key">${esc(t(p.label))}</span>
+                  <span class="option__desc">${esc(t(p.desc))}</span>
                 </label>
               </div>`).join("")}
           </fieldset>
@@ -118,14 +133,13 @@ export const SCREENS = {
     label: "Choose your region",
     render: () => {
       const available = regionsFor(state.period);
-      const periodLabel = PERIODS.find(p => p.code === state.period)?.label ?? "";
       return `
       <section class="screen">
-        <p class="eyebrow">Choice 2 of 2 · ${esc(periodLabel)}</p>
+        <p class="eyebrow">Choice 2 of 2 · ${esc(periodLabel(state.period))}</p>
         <form id="region-form">
           <fieldset class="options">
             <legend><h1 id="screen-title">Where are the negotiations taking place?</h1></legend>
-            ${REGIONS.map(r => {
+            ${getRegions().map(r => {
               const on = available.has(r.code);
               return `
               <div class="option">
@@ -133,7 +147,7 @@ export const SCREENS = {
                   ${on ? "" : "disabled"} ${state.region === r.code ? "checked" : ""}
                   ${on ? "" : `aria-describedby="r-${r.code}-na"`}>
                 <label for="r-${r.code}">
-                  <span class="option__key">${esc(r.label)}</span>
+                  <span class="option__key">${esc(t(r.label))}</span>
                   ${on ? "" : `<span class="option__na" id="r-${r.code}-na">No active file</span>`}
                 </label>
               </div>`;
@@ -188,13 +202,13 @@ export const SCREENS = {
       <section class="screen">
         <p class="eyebrow">File 01 · Your situation</p>
         <article class="briefing" aria-labelledby="screen-title">
-          <span class="placeholder-tag">Placeholder text</span>
           <div class="briefing__meta">
-            <span>Time <b>${esc(PERIODS.find(p => p.code === situation.period).label)}</b></span>
-            <span>Region <b>${esc(REGIONS.find(r => r.code === situation.region).label)}</b></span>
+            <span>Time <b>${esc(periodLabel(situation.period))}</b></span>
+            <span>Region <b>${esc(regionLabel(situation.region))}</b></span>
           </div>
-          <h1 id="screen-title">${esc(situation.title)}</h1>
-          <p class="briefing__body">${esc(situation.context)}</p>
+          <h1 id="screen-title">${esc(t(situation.title))}</h1>
+          <p class="briefing__body">${esc(t(situation.context))}</p>
+          ${partiesHtml(situation.parties)}
         </article>
         <div class="actions"><button type="button" class="btn" data-action="next">Continue</button></div>
       </section>`;
@@ -216,9 +230,8 @@ export const SCREENS = {
       <section class="screen">
         <p class="eyebrow">File 02 · Your role</p>
         <article class="briefing" aria-labelledby="screen-title">
-          <span class="placeholder-tag">Placeholder text</span>
-          <h1 id="screen-title">${esc(variant.role)}</h1>
-          <p class="briefing__body">${esc(variant.brief)}</p>
+          <h1 id="screen-title">${esc(t(variant.role.title))}</h1>
+          <p class="briefing__body">${esc(t(variant.role.brief))}</p>
         </article>
         <div class="actions"><button type="button" class="btn" data-action="next">Continue</button></div>
       </section>`;
@@ -243,9 +256,8 @@ export const SCREENS = {
       <section class="screen">
         <p class="eyebrow">File 03 · New development</p>
         <article class="briefing" aria-labelledby="screen-title">
-          <span class="placeholder-tag">Placeholder text</span>
           <h1 id="screen-title" class="visually-hidden">New development</h1>
-          <p class="briefing__body">${esc(variant.development)}</p>
+          <p class="briefing__body">${esc(t(variant.development))}</p>
         </article>
         <div class="actions"><button type="button" class="btn" data-action="next">Open my case file</button></div>
       </section>`;
@@ -267,12 +279,13 @@ export const SCREENS = {
             <code id="case-id">${idHtml(caseId)}</code>
           </div>
           <dl>
-            <dt>Time</dt><dd>${esc(PERIODS.find(p => p.code === situation.period).label)}</dd>
-            <dt>Region</dt><dd>${esc(REGIONS.find(r => r.code === situation.region).label)}</dd>
-            <dt>Situation</dt><dd>${esc(situation.title)}</dd>
-            <dt>Your role</dt><dd>${esc(variant.role)}</dd>
-            <dt>New development</dt><dd>${esc(variant.development)}</dd>
+            <dt>Time</dt><dd>${esc(periodLabel(situation.period))}</dd>
+            <dt>Region</dt><dd>${esc(regionLabel(situation.region))}</dd>
+            <dt>Situation</dt><dd><strong>${esc(t(situation.title))}</strong><br>${esc(t(situation.context))}</dd>
+            <dt>Your role</dt><dd><strong>${esc(t(variant.role.title))}</strong><br>${esc(t(variant.role.brief))}</dd>
+            <dt>New development</dt><dd>${esc(t(variant.development))}</dd>
           </dl>
+          ${partiesHtml(situation.parties)}
           <section class="dossier__task" aria-labelledby="task-h">
             <h2 id="task-h">Your task</h2>
             <p class="rule">Record a video in English, no longer than ${CONFIG.videoMaxMinutes} minutes, explaining what you would do next.</p>
@@ -341,15 +354,18 @@ function caseAsText() {
     `THE NEGOTIATION ROOM — Dialogue for the Future 2026`,
     `CASE ID: ${caseId}`,
     ``,
-    `TIME: ${PERIODS.find(p => p.code === situation.period).label}`,
-    `REGION: ${REGIONS.find(r => r.code === situation.region).label}`,
-    `SITUATION: ${situation.title}`,
-    situation.context,
+    `TIME: ${periodLabel(situation.period)}`,
+    `REGION: ${regionLabel(situation.region)}`,
+    `SITUATION: ${t(situation.title)}`,
+    t(situation.context),
     ``,
-    `YOUR ROLE: ${variant.role}`,
-    variant.brief,
+    `PARTIES AT THE TABLE`,
+    ...situation.parties.map(p => `— ${t(p.name)}\n  Position: ${t(p.position)}\n  Constraint: ${t(p.constraint)}`),
     ``,
-    `NEW DEVELOPMENT: ${variant.development}`,
+    `YOUR ROLE: ${t(variant.role.title)}`,
+    t(variant.role.brief),
+    ``,
+    `NEW DEVELOPMENT: ${t(variant.development)}`,
     ``,
     `YOUR TASK: Record a video in English, no longer than ${CONFIG.videoMaxMinutes} minutes, explaining what you would do next.`,
   ].join("\n");

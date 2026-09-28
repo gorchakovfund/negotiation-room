@@ -1,0 +1,1265 @@
+{
+  "schema": 1,
+  "situations": [
+    {
+      "id": "DTW",
+      "status": "draft",
+      "type": "fictional",
+      "period": "1990",
+      "region": "BK",
+      "title": {
+        "en": "A divided town after the ceasefire"
+      },
+      "context": {
+        "en": "The war ended four months ago, but the ceasefire line still runs through the middle of a river town. Before the war, two communities lived side by side; now each controls one bank, and the only bridge is guarded from both ends. Thousands of families driven out of their homes want to return, but many of those homes are now occupied by people displaced from elsewhere. An international administration has a mandate to reunify the town’s institutions — police, schools, water supply — within a year, but it can do little without local cooperation. Donors have promised reconstruction money, but only for a town that works as one. Local elections are due in five months, and every leader fears looking weak before them."
+      },
+      "parties": [
+        {
+          "name": {
+            "en": "Leadership of the east-bank community"
+          },
+          "position": {
+            "en": "Displaced families must be able to return first; no joint institutions until property is restored."
+          },
+          "constraint": {
+            "en": "Many of its own displaced families live in homes it would have to hand back."
+          }
+        },
+        {
+          "name": {
+            "en": "Leadership of the west-bank community"
+          },
+          "position": {
+            "en": "Joint institutions only with equal representation and a veto on key decisions."
+          },
+          "constraint": {
+            "en": "Hardliners accuse it of preparing to “give the town away” before the elections."
+          }
+        },
+        {
+          "name": {
+            "en": "International administrator"
+          },
+          "position": {
+            "en": "A single town council, police force and school system within 12 months."
+          },
+          "constraint": {
+            "en": "It can impose decisions, but imposed decisions have so far been ignored on the ground."
+          }
+        },
+        {
+          "name": {
+            "en": "Donor group"
+          },
+          "position": {
+            "en": "Reconstruction money only for projects that serve both communities."
+          },
+          "constraint": {
+            "en": "Its governments are losing patience and want to announce a success."
+          }
+        }
+      ],
+      "variants": [
+        {
+          "id": "ADV",
+          "version": 1,
+          "role": {
+            "code": "ADV",
+            "title": {
+              "en": "Adviser to the international administrator"
+            },
+            "brief": {
+              "en": "You advise the administrator on the reunification plan. You can draft proposals and meet both leaderships informally, but you cannot promise money or change the 12-month deadline."
+            }
+          },
+          "development": {
+            "en": "A night-time fire destroys a house belonging to a family that had just returned. Each side blames the other, and both leaderships announce they are suspending the talks."
+          },
+          "internal": {
+            "difficulty": null,
+            "skills_tested": [],
+            "validated_by": "",
+            "notes": ""
+          }
+        },
+        {
+          "id": "NEG",
+          "version": 1,
+          "role": {
+            "code": "NEG",
+            "title": {
+              "en": "Negotiator for the east-bank community"
+            },
+            "brief": {
+              "en": "You lead your community’s team at the table. Your community council expects you to secure the return of displaced families. You may agree to joint institutions only if the council approves them."
+            }
+          },
+          "development": {
+            "en": "The donor group announces that half of the reconstruction money will go to another town unless a joint water utility is agreed within two weeks."
+          },
+          "internal": {
+            "difficulty": null,
+            "skills_tested": [],
+            "validated_by": "",
+            "notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "DMB",
+      "status": "draft",
+      "type": "fictional",
+      "period": "1990",
+      "region": "AF",
+      "title": {
+        "en": "Disarming the armed groups"
+      },
+      "context": {
+        "en": "After seven years of civil war, the government and the main rebel movement have signed a peace agreement. It promises that fighters will hand in their weapons in exchange for cash, training and a place in a new national army. Six months later, almost nothing has happened. Rebel commanders say they will not disarm while militias allied to the government remain armed. The government says it cannot pay for the programme until donors release funds; donors want to see disarmament begin first. A regional peacekeeping force monitors the ceasefire, but its mandate expires in ninety days. Tens of thousands of young fighters have no income, and clashes over mining areas are increasing."
+      },
+      "parties": [
+        {
+          "name": {
+            "en": "The government"
+          },
+          "position": {
+            "en": "The rebels must disarm first; the militias are “local defence” and will be dealt with later."
+          },
+          "constraint": {
+            "en": "It relies on the militias for security in several provinces."
+          }
+        },
+        {
+          "name": {
+            "en": "The rebel movement"
+          },
+          "position": {
+            "en": "All armed groups disarm at the same time, plus guaranteed senior posts in the new army."
+          },
+          "constraint": {
+            "en": "Its commanders fear prosecution and losing control of mining revenue."
+          }
+        },
+        {
+          "name": {
+            "en": "Regional peacekeeping force"
+          },
+          "position": {
+            "en": "A clear timetable that justifies extending its mandate."
+          },
+          "constraint": {
+            "en": "The states paying for it want to bring their troops home."
+          }
+        },
+        {
+          "name": {
+            "en": "Donor coalition"
+          },
+          "position": {
+            "en": "Money for the programme will follow visible disarmament."
+          },
+          "constraint": {
+            "en": "Earlier funds disappeared, and its parliaments are watching closely."
+          }
+        }
+      ],
+      "variants": [
+        {
+          "id": "IOR",
+          "version": 1,
+          "role": {
+            "code": "IOR",
+            "title": {
+              "en": "Representative of an international organisation"
+            },
+            "brief": {
+              "en": "You head the office that will run the disarmament programme. Both sides see you as neutral, but you control no money yourself and cannot guarantee anyone’s safety."
+            }
+          },
+          "development": {
+            "en": "A rebel unit attacks a government convoy near a mining area. Rebel leaders say the unit acted without orders, but they cannot prove it."
+          },
+          "internal": {
+            "difficulty": null,
+            "skills_tested": [],
+            "validated_by": "",
+            "notes": ""
+          }
+        },
+        {
+          "id": "JUN",
+          "version": 1,
+          "role": {
+            "code": "JUN",
+            "title": {
+              "en": "Junior member of the government delegation, asked to propose an alternative strategy"
+            },
+            "brief": {
+              "en": "The head of your delegation believes the talks are stuck and has asked you to propose a new approach by tomorrow. You may suggest anything, but the President must be able to present it as strength, not as a concession."
+            }
+          },
+          "development": {
+            "en": "A regional newspaper publishes leaked minutes showing that the government privately considered bringing the militias into the new army before the rebels."
+          },
+          "internal": {
+            "difficulty": null,
+            "skills_tested": [],
+            "validated_by": "",
+            "notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "BDR",
+      "status": "draft",
+      "type": "fictional",
+      "period": "2000",
+      "region": "AR",
+      "title": {
+        "en": "Drawing the desert border"
+      },
+      "context": {
+        "en": "Two neighbouring states on the Arabian Peninsula have never formally marked a 300-kilometre stretch of their desert border. For decades it did not matter: nomadic families crossed freely with their herds, and neither state had officials there. Then a survey found a large oil field under the unmarked zone. Both states now claim it, citing different historical maps and old agreements with tribal leaders. Talks have begun under a regional council of states that wants to avoid a quarrel between its members. A foreign oil company has signed an exploration contract with one side and is waiting to drill. The families who live in the area have not been consulted by either government."
+      },
+      "parties": [
+        {
+          "name": {
+            "en": "The northern state"
+          },
+          "position": {
+            "en": "The border follows a 1930s map that puts most of the oil field on its side."
+          },
+          "constraint": {
+            "en": "Its ruler has told the public that “not one grain of sand” will be given up."
+          }
+        },
+        {
+          "name": {
+            "en": "The southern state"
+          },
+          "position": {
+            "en": "The border follows the grazing lands of tribes loyal to it, which puts the field on its side."
+          },
+          "constraint": {
+            "en": "The field is its only prospect of new revenue for a decade."
+          }
+        },
+        {
+          "name": {
+            "en": "Regional council of states"
+          },
+          "position": {
+            "en": "A quick settlement that keeps both members inside the council."
+          },
+          "constraint": {
+            "en": "It has no power to impose a decision."
+          }
+        },
+        {
+          "name": {
+            "en": "Families of the border area"
+          },
+          "position": {
+            "en": "Freedom to move their herds across any new line."
+          },
+          "constraint": {
+            "en": "They have no seat at the talks."
+          }
+        }
+      ],
+      "variants": [
+        {
+          "id": "MED",
+          "version": 1,
+          "role": {
+            "code": "MED",
+            "title": {
+              "en": "Mediator appointed by the regional council"
+            },
+            "brief": {
+              "en": "Both states accepted you as mediator. You can propose solutions and meet each side separately, but your recommendations are not binding, and you lose your role if either side rejects you."
+            }
+          },
+          "development": {
+            "en": "Border guards from the northern state detain a family crossing with their camels. The southern state calls it a provocation and recalls its delegation for consultations."
+          },
+          "internal": {
+            "difficulty": null,
+            "skills_tested": [],
+            "validated_by": "",
+            "notes": ""
+          }
+        },
+        {
+          "id": "ADV",
+          "version": 1,
+          "role": {
+            "code": "ADV",
+            "title": {
+              "en": "Legal adviser to the southern state’s delegation"
+            },
+            "brief": {
+              "en": "You prepare your delegation’s arguments and draft its proposals. The head of delegation decides, but trusts your judgment. Your government has said the oil field must not be lost."
+            }
+          },
+          "development": {
+            "en": "New geological data show the oil field is smaller than thought and lies mostly in an area that both maps place in the north."
+          },
+          "internal": {
+            "difficulty": null,
+            "skills_tested": [],
+            "validated_by": "",
+            "notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "GAS",
+      "status": "draft",
+      "type": "fictional",
+      "period": "2000",
+      "region": "LA",
+      "title": {
+        "en": "Who owns the gas?"
+      },
+      "context": {
+        "en": "A newly elected government has come to power promising that the country’s natural gas will finally benefit its own people. For years a foreign energy consortium has extracted the gas under contracts that leave the state a small share of the revenue. The new president has announced that the contracts will be renegotiated within 180 days — or the fields will be taken over. Most of the gas is exported to a larger neighbouring country whose industry depends on it. Indigenous communities near the fields support the government, but they also want a direct share of the revenue and a say over new drilling. The consortium has hinted at international arbitration, which could take years and freeze all new investment."
+      },
+      "parties": [
+        {
+          "name": {
+            "en": "The new government"
+          },
+          "position": {
+            "en": "The state receives most of the revenue and controls the fields."
+          },
+          "constraint": {
+            "en": "It lacks the technical expertise to run the fields alone."
+          }
+        },
+        {
+          "name": {
+            "en": "Foreign energy consortium"
+          },
+          "position": {
+            "en": "Contracts must be respected; any change requires full compensation."
+          },
+          "constraint": {
+            "en": "It has invested heavily and cannot easily move its equipment elsewhere."
+          }
+        },
+        {
+          "name": {
+            "en": "Neighbouring importing country"
+          },
+          "position": {
+            "en": "Uninterrupted supply at a predictable price."
+          },
+          "constraint": {
+            "en": "It has no alternative supplier in the short term."
+          }
+        },
+        {
+          "name": {
+            "en": "Indigenous communities"
+          },
+          "position": {
+            "en": "A direct share of the revenue and consent over new drilling."
+          },
+          "constraint": {
+            "en": "They are divided over whether to negotiate or protest."
+          }
+        }
+      ],
+      "variants": [
+        {
+          "id": "HOD",
+          "version": 1,
+          "role": {
+            "code": "HOD",
+            "title": {
+              "en": "Head of the government’s negotiating team"
+            },
+            "brief": {
+              "en": "You represent the new government. The President expects a result he can present as a victory, but you know the country needs the consortium’s technology for at least five more years."
+            }
+          },
+          "development": {
+            "en": "On the President’s orders, and without warning you, troops are sent to guard the gas fields. The consortium’s staff are still working, but the company has suspended all talks."
+          },
+          "internal": {
+            "difficulty": null,
+            "skills_tested": [],
+            "validated_by": "",
+            "notes": ""
+          }
+        },
+        {
+          "id": "ENV",
+          "version": 1,
+          "role": {
+            "code": "ENV",
+            "title": {
+              "en": "Special envoy of the neighbouring importing country"
+            },
+            "brief": {
+              "en": "You are not a party to the contracts, but your country depends on the gas. You may offer help, such as investment or a long-term purchase agreement, but your government will not pay a much higher price."
+            }
+          },
+          "development": {
+            "en": "Winter has arrived early, and your country’s gas reserves will run out in three weeks. Both the government and the consortium know it."
+          },
+          "internal": {
+            "difficulty": null,
+            "skills_tested": [],
+            "validated_by": "",
+            "notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "MIG",
+      "status": "draft",
+      "type": "fictional",
+      "period": "2010",
+      "region": "EU",
+      "title": {
+        "en": "Sharing responsibility for new arrivals"
+      },
+      "context": {
+        "en": "In a single summer, more than half a million people have arrived by sea on the southern coast of a union of European states, many of them fleeing wars in nearby regions. Under the union’s rules, the country where they first arrive must register them and handle their asylum claims. The southern coastal state says its system has collapsed, and many people are moving north without being registered. Northern states, where most of them want to go, have begun closing their borders. A neighbouring state outside the union, through which many travel, offers to host more people in exchange for money and visa-free travel for its citizens. The union’s leaders meet in ten days to agree a common response."
+      },
+      "parties": [
+        {
+          "name": {
+            "en": "Southern coastal state"
+          },
+          "position": {
+            "en": "Arrivals must be shared among all member states through mandatory quotas."
+          },
+          "constraint": {
+            "en": "Its government faces an election and a rising anti-migration party."
+          }
+        },
+        {
+          "name": {
+            "en": "Northern destination states"
+          },
+          "position": {
+            "en": "Stronger control of the union’s external border before any sharing."
+          },
+          "constraint": {
+            "en": "Their public is divided between welcome and fear."
+          }
+        },
+        {
+          "name": {
+            "en": "Eastern member states"
+          },
+          "position": {
+            "en": "No mandatory quotas; they will contribute money, but not accept arrivals."
+          },
+          "constraint": {
+            "en": "They see quotas as a question of sovereignty and fear being outvoted."
+          }
+        },
+        {
+          "name": {
+            "en": "Neighbouring transit state"
+          },
+          "position": {
+            "en": "Financial support and visa-free travel in exchange for cooperation."
+          },
+          "constraint": {
+            "en": "It already hosts millions of refugees."
+          }
+        }
+      ],
+      "variants": [
+        {
+          "id": "ENV",
+          "version": 1,
+          "role": {
+            "code": "ENV",
+            "title": {
+              "en": "Special envoy of the union’s presidency"
+            },
+            "brief": {
+              "en": "Your task is to find a compromise every member state can sign at the summit. You can propose any package, but decisions require the agreement of all member states."
+            }
+          },
+          "development": {
+            "en": "A boat capsizes near the southern coast and more than 300 people die. Images of the tragedy are on every front page, and the pressure to act is enormous."
+          },
+          "internal": {
+            "difficulty": null,
+            "skills_tested": [],
+            "validated_by": "",
+            "notes": ""
+          }
+        },
+        {
+          "id": "REP",
+          "version": 1,
+          "role": {
+            "code": "REP",
+            "title": {
+              "en": "Representative of the neighbouring transit state"
+            },
+            "brief": {
+              "en": "You represent a state outside the union. Your government wants money and visa-free travel and is ready to take people back — but it refuses to be seen as the union’s “waiting room”."
+            }
+          },
+          "development": {
+            "en": "A leaked document shows that two northern states are quietly negotiating an arrangement along a different route that would make your country far less important."
+          },
+          "internal": {
+            "difficulty": null,
+            "skills_tested": [],
+            "validated_by": "",
+            "notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "FSH",
+      "status": "draft",
+      "type": "fictional",
+      "period": "2010",
+      "region": "AS",
+      "title": {
+        "en": "An incident at the fishing grounds"
+      },
+      "context": {
+        "en": "Two neighbouring states in East Asia both claim a group of small islands and the rich fishing grounds around them. For years, fishermen from both countries shared the waters under an informal understanding. This morning, a coast guard vessel of one state detained a fishing boat from the other after a collision damaged the coast guard ship. The captain and twelve crew are being held on shore. One state says the captain broke its law in its own waters and must stand trial; the other says the arrest was illegal because the waters are disputed. Both governments face strong nationalist pressure at home. Trade between them is worth billions a year, and a regional summit is due next month."
+      },
+      "parties": [
+        {
+          "name": {
+            "en": "The detaining state"
+          },
+          "position": {
+            "en": "The captain must be tried under its law."
+          },
+          "constraint": {
+            "en": "Releasing him without a trial would look like admitting the waters are disputed."
+          }
+        },
+        {
+          "name": {
+            "en": "The fishermen’s state"
+          },
+          "position": {
+            "en": "Immediate, unconditional release of the captain and crew."
+          },
+          "constraint": {
+            "en": "Its public is demanding a strong response."
+          }
+        },
+        {
+          "name": {
+            "en": "Fishing communities on both sides"
+          },
+          "position": {
+            "en": "To fish safely, without incidents."
+          },
+          "constraint": {
+            "en": "Their income depends on a season that ends soon."
+          }
+        },
+        {
+          "name": {
+            "en": "Business groups in both countries"
+          },
+          "position": {
+            "en": "Stability and no trade sanctions."
+          },
+          "constraint": {
+            "en": "They cannot speak publicly without being called unpatriotic."
+          }
+        }
+      ],
+      "variants": [
+        {
+          "id": "ADV",
+          "version": 1,
+          "role": {
+            "code": "ADV",
+            "title": {
+              "en": "Adviser to the foreign minister of the detaining state"
+            },
+            "brief": {
+              "en": "Your minister must decide within 48 hours whether the trial goes ahead. You can recommend any option and use diplomatic channels, but you cannot overrule the courts."
+            }
+          },
+          "development": {
+            "en": "The other state halts exports of a rare material that your electronics industry depends on. It denies any connection to the incident."
+          },
+          "internal": {
+            "difficulty": null,
+            "skills_tested": [],
+            "validated_by": "",
+            "notes": ""
+          }
+        },
+        {
+          "id": "TPC",
+          "version": 1,
+          "role": {
+            "code": "TPC",
+            "title": {
+              "en": "Envoy of a third country trusted by both sides"
+            },
+            "brief": {
+              "en": "Both governments have privately asked you to help find a way out. Neither will be seen requesting mediation in public, so everything you do must stay informal."
+            }
+          },
+          "development": {
+            "en": "A video of the collision appears online. It is unclear, and both sides say it proves they are right."
+          },
+          "internal": {
+            "difficulty": null,
+            "skills_tested": [],
+            "validated_by": "",
+            "notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "TNK",
+      "status": "draft",
+      "type": "fictional",
+      "period": "2026",
+      "region": "AR",
+      "title": {
+        "en": "A stranded tanker in the strait"
+      },
+      "context": {
+        "en": "An ageing oil tanker loaded with over a million barrels of crude has lost power and is anchored in a narrow strait off the Arabian Peninsula, one of the world’s busiest shipping routes. Its hull is badly corroded, and engineers warn that it could break apart within weeks. A spill would destroy fisheries, shut down desalination plants that supply drinking water to millions, and block the strait. The ship’s registered owner, a company based abroad, says it has no money. The coastline nearest to the tanker is controlled by local authorities who are not recognised by the national government, and each side claims the right to decide. An international organisation has a plan to pump the oil into another ship, but only part of the money has been raised."
+      },
+      "parties": [
+        {
+          "name": {
+            "en": "Authorities controlling the coast"
+          },
+          "position": {
+            "en": "They must approve any operation, and they want the value of the oil."
+          },
+          "constraint": {
+            "en": "They fear the operation could be used against them."
+          }
+        },
+        {
+          "name": {
+            "en": "The recognised national government"
+          },
+          "position": {
+            "en": "The oil belongs to the state and must not benefit its rivals."
+          },
+          "constraint": {
+            "en": "It has no control over the area where the tanker lies."
+          }
+        },
+        {
+          "name": {
+            "en": "Neighbouring coastal state"
+          },
+          "position": {
+            "en": "The oil must be removed immediately."
+          },
+          "constraint": {
+            "en": "It will not fund anything that could benefit authorities it considers hostile."
+          }
+        },
+        {
+          "name": {
+            "en": "International organisation"
+          },
+          "position": {
+            "en": "A neutral technical operation, with ownership of the oil decided later."
+          },
+          "constraint": {
+            "en": "It has raised only 60% of the money needed."
+          }
+        }
+      ],
+      "variants": [
+        {
+          "id": "IOR",
+          "version": 1,
+          "role": {
+            "code": "IOR",
+            "title": {
+              "en": "Head of the international rescue operation"
+            },
+            "brief": {
+              "en": "You lead the technical team. Your plan is ready, but you need permission from both the coastal authorities and the national government, and the rest of the money. You cannot take sides on who owns the oil."
+            }
+          },
+          "development": {
+            "en": "A storm is forecast to reach the strait in ten days. Engineers say the hull may not survive it."
+          },
+          "internal": {
+            "difficulty": null,
+            "skills_tested": [],
+            "validated_by": "",
+            "notes": ""
+          }
+        },
+        {
+          "id": "HOD",
+          "version": 1,
+          "role": {
+            "code": "HOD",
+            "title": {
+              "en": "Head of the neighbouring state’s delegation"
+            },
+            "brief": {
+              "en": "Your country’s coast and water supply are directly at risk. You can offer ships and technical help, but your parliament has forbidden any payment that could benefit the authorities controlling the coast."
+            }
+          },
+          "development": {
+            "en": "The coastal authorities announce they will allow the operation only if the oil is sold and the money is paid to them."
+          },
+          "internal": {
+            "difficulty": null,
+            "skills_tested": [],
+            "validated_by": "",
+            "notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "PPL",
+      "status": "draft",
+      "type": "fictional",
+      "period": "2026",
+      "region": "BK",
+      "title": {
+        "en": "A pipeline across three borders"
+      },
+      "context": {
+        "en": "A new gas pipeline has been built to carry gas from a supplier outside Europe through three Balkan states to markets in Central Europe. Construction is finished, but no gas can flow until the states agree on transit fees and on who operates each section. The middle transit state, which has the longest stretch, is demanding fees twice as high as the others. The first transit state wants a share of the gas for its own needs at a discount. A large European union of states says the pipeline must follow its energy rules, which forbid the supplier from also owning the pipeline; the supplier says it cannot accept this. Winter is approaching, and several states in the region depend on this gas."
+      },
+      "parties": [
+        {
+          "name": {
+            "en": "The gas supplier"
+          },
+          "position": {
+            "en": "Long-term contracts and a controlling share in the pipeline."
+          },
+          "constraint": {
+            "en": "It has already spent billions and needs revenue to start flowing."
+          }
+        },
+        {
+          "name": {
+            "en": "The first transit state"
+          },
+          "position": {
+            "en": "A discounted share of the gas for its own needs."
+          },
+          "constraint": {
+            "en": "Its economy depends on cheap energy and it has few alternatives."
+          }
+        },
+        {
+          "name": {
+            "en": "The middle transit state"
+          },
+          "position": {
+            "en": "Higher fees, because it carries the longest stretch and the greatest risk."
+          },
+          "constraint": {
+            "en": "It is a candidate to join the European union and cannot openly break its rules."
+          }
+        },
+        {
+          "name": {
+            "en": "The union’s energy commission"
+          },
+          "position": {
+            "en": "The pipeline must follow union rules on competition and ownership."
+          },
+          "constraint": {
+            "en": "Several of its member states want the gas quickly."
+          }
+        }
+      ],
+      "variants": [
+        {
+          "id": "MED",
+          "version": 1,
+          "role": {
+            "code": "MED",
+            "title": {
+              "en": "Facilitator appointed by the regional energy community"
+            },
+            "brief": {
+              "en": "All four parties accepted you as a neutral facilitator. You can call meetings and propose texts, but you cannot change union rules or set prices."
+            }
+          },
+          "development": {
+            "en": "An inspection finds a technical defect in the middle section. Repairs will take two months, and each side blames the others for the delay."
+          },
+          "internal": {
+            "difficulty": null,
+            "skills_tested": [],
+            "validated_by": "",
+            "notes": ""
+          }
+        },
+        {
+          "id": "HOD",
+          "version": 1,
+          "role": {
+            "code": "HOD",
+            "title": {
+              "en": "Chief negotiator of the middle transit state"
+            },
+            "brief": {
+              "en": "Your government expects higher fees, but your country hopes to join the union within five years. You may agree to any fee your parliament will ratify, but you must not endanger the accession talks."
+            }
+          },
+          "development": {
+            "en": "The supplier announces it may send the gas through a different route that bypasses your country entirely."
+          },
+          "internal": {
+            "difficulty": null,
+            "skills_tested": [],
+            "validated_by": "",
+            "notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "RIV",
+      "status": "draft",
+      "type": "fictional",
+      "period": "2040",
+      "region": "AF",
+      "title": {
+        "en": "A river in a permanent drought"
+      },
+      "context": {
+        "en": "Rainfall in a great African river basin has fallen by a third in twenty years, and scientists now call the drought permanent. The upstream state has completed a giant dam that will give electricity to millions of its citizens for the first time, and it wants to fill the reservoir quickly. Two downstream states depend on the river for almost all their drinking water and farming; one has already seen its harvests fail. An agreement from the 1950s gives the downstream states most of the water, but the upstream state never signed it. A river basin commission exists but has never met at ministerial level. International lenders will not fund any further projects in the basin without an agreement."
+      },
+      "parties": [
+        {
+          "name": {
+            "en": "The upstream state"
+          },
+          "position": {
+            "en": "The right to use the river for its development, with no veto from others."
+          },
+          "constraint": {
+            "en": "Its government has made the dam a symbol of national pride."
+          }
+        },
+        {
+          "name": {
+            "en": "The first downstream state"
+          },
+          "position": {
+            "en": "A guaranteed minimum flow every year, based on the old agreement."
+          },
+          "constraint": {
+            "en": "95% of its water comes from the river."
+          }
+        },
+        {
+          "name": {
+            "en": "The second downstream state"
+          },
+          "position": {
+            "en": "A fair share of water and cheap electricity from the dam."
+          },
+          "constraint": {
+            "en": "It sits between two larger neighbours and fears being ignored."
+          }
+        },
+        {
+          "name": {
+            "en": "River basin commission"
+          },
+          "position": {
+            "en": "Joint management of the river with shared data."
+          },
+          "constraint": {
+            "en": "It has no budget and no power to enforce anything."
+          }
+        }
+      ],
+      "variants": [
+        {
+          "id": "IOR",
+          "version": 1,
+          "role": {
+            "code": "IOR",
+            "title": {
+              "en": "Secretary-General of the river basin commission"
+            },
+            "brief": {
+              "en": "For the first time, ministers from all three states have agreed to meet under your chairmanship. You can set the agenda and propose a draft agreement, but any state can walk out at any time."
+            }
+          },
+          "development": {
+            "en": "Satellite data suggest that the upstream state is filling the reservoir faster than it announced. It says the data are wrong."
+          },
+          "internal": {
+            "difficulty": null,
+            "skills_tested": [],
+            "validated_by": "",
+            "notes": ""
+          }
+        },
+        {
+          "id": "REP",
+          "version": 1,
+          "role": {
+            "code": "REP",
+            "title": {
+              "en": "Representative of the second downstream state"
+            },
+            "brief": {
+              "en": "Your country is the smallest of the three. You want water security and cheap electricity, and you would prefer not to take sides between your two larger neighbours."
+            }
+          },
+          "development": {
+            "en": "Both larger neighbours privately offer you a separate deal if you support them at the meeting."
+          },
+          "internal": {
+            "difficulty": null,
+            "skills_tested": [],
+            "validated_by": "",
+            "notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "LTH",
+      "status": "draft",
+      "type": "fictional",
+      "period": "2040",
+      "region": "LA",
+      "title": {
+        "en": "Lithium and the forest"
+      },
+      "context": {
+        "en": "Beneath a protected rainforest in a Latin American state lies one of the world’s largest lithium deposits, essential for batteries. Global demand has tripled, and a consortium of technology companies is offering an investment worth a fifth of the country’s GDP to extract it. The government sees a chance to escape decades of debt. But the forest is the home of indigenous peoples who hold legal rights to the land, and it feeds a river that supplies a neighbouring country. An international climate fund pays the country every year to keep the forest standing and would stop if large-scale mining begins. The constitution requires the government to consult indigenous communities, but not to obtain their agreement."
+      },
+      "parties": [
+        {
+          "name": {
+            "en": "The government"
+          },
+          "position": {
+            "en": "Extraction should go ahead under strict environmental conditions."
+          },
+          "constraint": {
+            "en": "A large debt repayment is due next year."
+          }
+        },
+        {
+          "name": {
+            "en": "Technology consortium"
+          },
+          "position": {
+            "en": "An exclusive 30-year licence and stable taxes."
+          },
+          "constraint": {
+            "en": "Two other countries are competing for its investment."
+          }
+        },
+        {
+          "name": {
+            "en": "Indigenous federation"
+          },
+          "position": {
+            "en": "No mining without the communities’ free, prior and informed consent."
+          },
+          "constraint": {
+            "en": "Some communities want jobs and a share of the profits."
+          }
+        },
+        {
+          "name": {
+            "en": "International climate fund"
+          },
+          "position": {
+            "en": "Payments continue only if deforestation stays within agreed limits."
+          },
+          "constraint": {
+            "en": "Its donors also need lithium for the energy transition."
+          }
+        }
+      ],
+      "variants": [
+        {
+          "id": "MED",
+          "version": 1,
+          "role": {
+            "code": "MED",
+            "title": {
+              "en": "Independent mediator of the consultation"
+            },
+            "brief": {
+              "en": "You were appointed to lead the consultation between the government, the consortium and the indigenous federation. You can shape the process and propose conditions, but the final decision is not yours."
+            }
+          },
+          "development": {
+            "en": "Young indigenous activists block the only road into the area. The federation’s elders say they did not approve the blockade."
+          },
+          "internal": {
+            "difficulty": null,
+            "skills_tested": [],
+            "validated_by": "",
+            "notes": ""
+          }
+        },
+        {
+          "id": "ADV",
+          "version": 1,
+          "role": {
+            "code": "ADV",
+            "title": {
+              "en": "Adviser to the technology consortium"
+            },
+            "brief": {
+              "en": "You advise the consortium’s board on whether and how to invest. The board wants the licence, but fears the damage to its reputation of a conflict with indigenous communities."
+            }
+          },
+          "development": {
+            "en": "A rival consortium offers the government a smaller project with less impact on the forest, and the President says he is “considering all options”."
+          },
+          "internal": {
+            "difficulty": null,
+            "skills_tested": [],
+            "validated_by": "",
+            "notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "CLM",
+      "status": "draft",
+      "type": "fictional",
+      "period": "2050",
+      "region": "EU",
+      "title": {
+        "en": "Climate relocation"
+      },
+      "context": {
+        "en": "By 2050, summer temperatures in southern Europe regularly pass 48°C, and several regions have lost their water supply. Hundreds of thousands of people from one southern state have already moved north on their own, and the government expects two million more to relocate within ten years. As citizens of a union of European states they may live anywhere in the union, but northern regions face housing shortages and rising tension. The southern state wants a union-wide relocation fund and guarantees that its citizens keep their full rights. Some northern states want to limit the right to move. The union must agree a “climate mobility pact” before next summer."
+      },
+      "parties": [
+        {
+          "name": {
+            "en": "The southern state"
+          },
+          "position": {
+            "en": "A union-wide fund and full rights for relocated citizens."
+          },
+          "constraint": {
+            "en": "It fears losing its young people and its future tax base."
+          }
+        },
+        {
+          "name": {
+            "en": "Northern receiving states"
+          },
+          "position": {
+            "en": "An orderly process, with limits on arrivals in any one region."
+          },
+          "constraint": {
+            "en": "Local elections show strong support for restricting movement."
+          }
+        },
+        {
+          "name": {
+            "en": "The union’s commission"
+          },
+          "position": {
+            "en": "Protect free movement, a founding principle of the union."
+          },
+          "constraint": {
+            "en": "The fund needs the agreement of every member state."
+          }
+        },
+        {
+          "name": {
+            "en": "Association of relocated communities"
+          },
+          "position": {
+            "en": "To be treated as citizens, not as refugees, and to have a voice in the pact."
+          },
+          "constraint": {
+            "en": "It has no formal status in the negotiations."
+          }
+        }
+      ],
+      "variants": [
+        {
+          "id": "ENV",
+          "version": 1,
+          "role": {
+            "code": "ENV",
+            "title": {
+              "en": "Special envoy of the union’s commission"
+            },
+            "brief": {
+              "en": "You must prepare a draft pact that all member states can accept. You may propose any mix of funding, rules and incentives, but you may not propose limits on free movement."
+            }
+          },
+          "development": {
+            "en": "A heatwave kills thousands in the south. The same week, a northern town votes in a referendum to refuse new residents."
+          },
+          "internal": {
+            "difficulty": null,
+            "skills_tested": [],
+            "validated_by": "",
+            "notes": ""
+          }
+        },
+        {
+          "id": "JUN",
+          "version": 1,
+          "role": {
+            "code": "JUN",
+            "title": {
+              "en": "Junior member of a northern delegation, asked to propose an alternative strategy"
+            },
+            "brief": {
+              "en": "Your head of delegation thinks your country’s current position — limits on arrivals — will fail. You have been asked to propose an alternative that protects your country’s interests without breaking union principles."
+            }
+          },
+          "development": {
+            "en": "Drought hits your own country’s southern provinces, and your government now has to relocate some of its own citizens."
+          },
+          "internal": {
+            "difficulty": null,
+            "skills_tested": [],
+            "validated_by": "",
+            "notes": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "AUT",
+      "status": "draft",
+      "type": "fictional",
+      "period": "2050",
+      "region": "AS",
+      "title": {
+        "en": "Rules for autonomous systems"
+      },
+      "context": {
+        "en": "Autonomous vessels and drones now patrol the busy seas of Asia, operated by several states and private companies. They make decisions in seconds, without human approval. Last month, two autonomous patrol vessels belonging to different states nearly collided, and one fired warning shots on its own. No one was hurt, but the incident showed that there are no shared rules for how such systems behave towards each other. Two leading technology powers each want to set the rules, but they distrust each other. Smaller coastal states fear being caught in between. A regional forum has convened talks on a code of conduct, and a global technology company whose software runs many of these systems has asked to take part."
+      },
+      "parties": [
+        {
+          "name": {
+            "en": "First technology power"
+          },
+          "position": {
+            "en": "Voluntary standards set by the countries that build the systems."
+          },
+          "constraint": {
+            "en": "Its military insists that the systems’ capabilities stay secret."
+          }
+        },
+        {
+          "name": {
+            "en": "Second technology power"
+          },
+          "position": {
+            "en": "A binding treaty with limits on armed autonomous systems."
+          },
+          "constraint": {
+            "en": "It is behind in the technology and fears being locked into second place."
+          }
+        },
+        {
+          "name": {
+            "en": "Smaller coastal states"
+          },
+          "position": {
+            "en": "A human must approve any use of force near their waters."
+          },
+          "constraint": {
+            "en": "They buy their systems from the two powers."
+          }
+        },
+        {
+          "name": {
+            "en": "The technology company"
+          },
+          "position": {
+            "en": "Common technical standards that apply to everyone."
+          },
+          "constraint": {
+            "en": "It sells to both powers and cannot be seen to favour either."
+          }
+        }
+      ],
+      "variants": [
+        {
+          "id": "IOR",
+          "version": 1,
+          "role": {
+            "code": "IOR",
+            "title": {
+              "en": "Chair of the regional forum’s talks"
+            },
+            "brief": {
+              "en": "You chair the talks and are expected to produce a first draft code of conduct within three days. The forum works by consensus, so any participant can block agreement."
+            }
+          },
+          "development": {
+            "en": "An autonomous drone crashes into a fishing boat in the waters of a smaller state. It is unclear who operated it, and neither power admits it was theirs."
+          },
+          "internal": {
+            "difficulty": null,
+            "skills_tested": [],
+            "validated_by": "",
+            "notes": ""
+          }
+        },
+        {
+          "id": "REP",
+          "version": 1,
+          "role": {
+            "code": "REP",
+            "title": {
+              "en": "Representative of the smaller coastal states"
+            },
+            "brief": {
+              "en": "You speak for a group of eight smaller states. Their interests are similar but not identical, and you may agree only to what all eight accept."
+            }
+          },
+          "development": {
+            "en": "One of the two powers offers your group free access to its systems if you support its proposal. Three of your eight states want to accept."
+          },
+          "internal": {
+            "difficulty": null,
+            "skills_tested": [],
+            "validated_by": "",
+            "notes": ""
+          }
+        }
+      ]
+    }
+  ]
+}

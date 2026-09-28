@@ -1,5 +1,6 @@
 import { state, subscribe, reset, SCREEN_ORDER } from "./state.js";
 import { SCREENS, bindCommon } from "./screens.js";
+import { loadData } from "./data.js";
 
 const main = document.getElementById("main");
 const progress = document.getElementById("progress");
@@ -29,7 +30,15 @@ function render() {
 
 bindCommon(main, render);
 subscribe(render);
-render();
+
+try {
+  await loadData();
+  render();
+} catch (err) {
+  console.error(err);
+  main.innerHTML = `<section class="screen"><h1>The case files could not be loaded.</h1>
+    <p class="lead">Please refresh the page. If the problem continues, contact the programme organisers.</p></section>`;
+}
 
 // Stage 1 convenience only: restart the prototype. Removed from public mode in Stage 3.
 const footer = document.querySelector(".footer");

@@ -1,0 +1,107 @@
+{
+  "periods": [
+    {
+      "code": "1990",
+      "label": {
+        "en": "1990s"
+      },
+      "desc": {
+        "en": "Old rules are disappearing, new ones have not yet been established"
+      }
+    },
+    {
+      "code": "2000",
+      "label": {
+        "en": "2000s"
+      },
+      "desc": {
+        "en": "A world that believed the big questions were settled"
+      }
+    },
+    {
+      "code": "2010",
+      "label": {
+        "en": "2010s"
+      },
+      "desc": {
+        "en": "Crises arrive faster than institutions can respond"
+      }
+    },
+    {
+      "code": "2026",
+      "label": {
+        "en": "2026"
+      },
+      "desc": {
+        "en": "A world of growing uncertainty"
+      }
+    },
+    {
+      "code": "2040",
+      "label": {
+        "en": "2040"
+      },
+      "desc": {
+        "en": "Climate and technology raise the stakes"
+      }
+    },
+    {
+      "code": "2050",
+      "label": {
+        "en": "2050"
+      },
+      "desc": {
+        "en": "A future whose rules are yet to be written"
+      }
+    }
+  ],
+  "regions": [
+    {
+      "code": "BK",
+      "label": {
+        "en": "The Balkans"
+      }
+    },
+    {
+      "code": "AR",
+      "label": {
+        "en": "Arabian Peninsula"
+      }
+    },
+    {
+      "code": "AF",
+      "label": {
+        "en": "Africa"
+      }
+    },
+    {
+      "code": "LA",
+      "label": {
+        "en": "Latin America"
+      }
+    },
+    {
+      "code": "EU",
+      "label": {
+        "en": "Europe"
+      }
+    },
+    {
+      "code": "AS",
+      "label": {
+        "en": "Asia"
+      }
+    }
+  ],
+  "roles": {
+    "MED": "Mediator / facilitator",
+    "ADV": "Adviser",
+    "HOD": "Head of delegation",
+    "NEG": "Negotiator for one side",
+    "REP": "Representative of a party",
+    "IOR": "Representative of an international organisation",
+    "ENV": "Special envoy",
+    "TPC": "Representative of a third country",
+    "JUN": "Junior member proposing an alternative strategy"
+  }
+}

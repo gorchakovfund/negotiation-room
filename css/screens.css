@@ -154,26 +154,25 @@
 .fiction-short { font-family: var(--font-mono); font-size: .6875rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-top: var(--space-2); }
 .dossier .fiction-short { color: #5b5a55; margin-top: var(--space-4); }
 
-/* ---------- Welcome: the negotiation table ---------- */
-.table-fx { width: min(100%, 340px); height: auto; display: block; margin-bottom: var(--space-2); }
-.t-table { fill: rgba(21,26,33,.7); stroke: var(--line-strong); stroke-width: 1; }
-.t-seat { fill: var(--bg); stroke: var(--muted); stroke-width: 1.2; animation: seat 6s ease-in-out infinite; animation-delay: calc(var(--i) * 2s); }
-.t-seat.is-key { stroke: var(--accent); }
-.t-thread { stroke: var(--accent); stroke-width: 1; stroke-dasharray: 320; stroke-dashoffset: 320; opacity: 0; animation: thread 6s var(--ease) infinite; animation-delay: calc(var(--i) * 2s); }
-.t-core { fill: var(--accent); animation: core 2.4s ease-in-out infinite; }
-@keyframes thread { 0% { stroke-dashoffset: 320; opacity: 0; } 8% { opacity: .9; } 35% { stroke-dashoffset: 0; opacity: .9; } 60% { opacity: 0; stroke-dashoffset: 0; } 100% { opacity: 0; } }
-@keyframes seat { 0%, 100% { fill: var(--bg); } 20%, 35% { fill: rgba(200,168,106,.35); } }
-@keyframes core { 50% { opacity: .3; } }
+/* ---------- Background: glowing pulses on the grid (canvas drawn by fx.js) ---------- */
+#grid-fx { position: fixed; inset: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; }
 
-/* ---------- "The situation chooses for you": case assembly ---------- */
-.fx-log { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; font-family: var(--font-mono); font-size: .8125rem; letter-spacing: .06em; color: var(--muted); }
-.fx-log li { display: flex; gap: var(--space-3); opacity: 0; animation: appear .01s linear forwards; animation-delay: calc(var(--i) * .6s); }
+/* ---------- Typing ---------- */
+.caret { display: inline-block; width: .08em; min-width: 2px; height: .95em; margin-left: .06em; vertical-align: -.08em; background: var(--accent); animation: blink 1s steps(1) infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+.after-type, .fx-late { opacity: 0; transform: translateY(6px); transition: opacity .5s var(--ease), transform .5s var(--ease); }
+.is-typed .after-type, .is-typed .fx-late { opacity: 1; transform: none; }
+
+/* ---------- "The situation chooses for you": the system types its log ---------- */
+.fx-log { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; font-family: var(--font-mono); font-size: .8125rem; letter-spacing: .06em; color: var(--muted); min-height: 7.5em; }
+.fx-log li { display: flex; flex-wrap: wrap; gap: 0 var(--space-2); visibility: hidden; }
+.fx-log li.on { visibility: visible; }
+.fx-log .mark { color: var(--accent); }
 .fx-log code { color: var(--text); letter-spacing: .04em; }
-.fx-log .ok { color: var(--accent); opacity: 0; animation: appear .01s linear forwards; animation-delay: calc(var(--i) * .6s + .45s); }
-.fx-log li:last-child .ok { animation-delay: 2.8s; }
-.fx-late { opacity: 0; animation: rise .6s var(--ease) forwards; animation-delay: 3s; }
-@keyframes appear { to { opacity: 1; } }
-@keyframes rise { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+.fx-log .ok { color: var(--accent); opacity: 0; transition: opacity .2s; }
+.fx-log li.done .ok { opacity: 1; }
+.interstitial h1 .line:empty { display: none; }
+.interstitial--top { justify-content: flex-start; }
 
 /* ---------- Declassified text: black bars wipe away ---------- */
 .declassify {
@@ -201,8 +200,10 @@
 @keyframes stamp { from { transform: rotate(-14deg) scale(2.4); opacity: 0; } to { transform: rotate(-4deg) scale(1); opacity: 1; } }
 
 @media (prefers-reduced-motion: reduce) {
-  .t-seat, .t-thread, .t-core, .fx-log li, .fx-log .ok, .fx-late, .dossier__stamp { animation: none; opacity: 1; }
-  .t-thread { stroke-dashoffset: 0; opacity: .5; }
+  .fx-log li { visibility: visible; } .fx-log .ok { opacity: 1; }
+  .after-type, .fx-late { opacity: 1; transform: none; transition: none; }
+  .caret { display: none; }
+  .dossier__stamp { animation: none; opacity: 1; }
   .declassify { animation: none; background-size: 0% 100%; }
   .declassify > span { animation: none; background: none; color: inherit; -webkit-text-fill-color: currentColor; }
 }

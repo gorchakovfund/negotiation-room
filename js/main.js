@@ -2,6 +2,7 @@ import { state, subscribe, reset, SCREEN_ORDER } from "./state.js";
 import { SCREENS, bindCommon } from "./screens.js";
 import { loadData } from "./data.js";
 import { loadUi, ui, getLang, setLang } from "./i18n.js";
+import { typeAll, initGridGlow } from "./fx.js";
 
 const main = document.getElementById("main");
 const progress = document.getElementById("progress");
@@ -33,6 +34,7 @@ function render({ keepFocus = false } = {}) {
   const screen = SCREENS[state.screen];
   main.innerHTML = screen.render(state);
   screen.bind?.(main);
+  typeAll(main);
   renderProgress();
 
   // Move focus to the new heading so keyboard and screen-reader users land in the right place.
@@ -74,6 +76,8 @@ document.querySelectorAll("[data-lang]").forEach(b => b.addEventListener("click"
 
 bindCommon(main, () => render());
 subscribe(() => render());
+
+initGridGlow();
 
 try {
   await Promise.all([loadUi(), loadData()]);

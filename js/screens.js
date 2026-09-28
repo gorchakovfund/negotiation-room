@@ -5,7 +5,7 @@ import { t, periodsWithCases, periodLabel, getThemes, themesFor, themeLabel } fr
 import { ui, getLang } from "./i18n.js";
 import { assignCase } from "./assign.js";
 import { CONFIG } from "./config.js";
-import { scramble, tableSvg } from "./fx.js";
+import { runCaseAssembly } from "./fx.js";
 
 const esc = (s) => String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const $ = (root, sel) => root.querySelector(sel);
@@ -40,10 +40,9 @@ export const SCREENS = {
     label: () => ui("label_welcome"),
     render: () => `
       <section class="screen">
-        ${tableSvg()}
         <p class="eyebrow">${ui("welcome_eyebrow")}</p>
-        <h1 class="display" id="screen-title">${ui("title")}</h1>
-        <p class="subtitle">${ui("subtitle")}</p>
+        <h1 class="display" id="screen-title" data-type>${ui("title")}</h1>
+        <p class="subtitle" data-type>${ui("subtitle")}</p>
         <div class="lead">
           <p>${ui("welcome_p1")}</p>
           <p>${ui("welcome_p2")}</p>
@@ -107,7 +106,7 @@ export const SCREENS = {
         <p class="eyebrow">${ui("period_eyebrow")}</p>
         <form id="period-form">
           <fieldset class="options">
-            <legend><h1 id="screen-title">${ui("period_title")}</h1></legend>
+            <legend><h1 id="screen-title" data-type>${ui("period_title")}</h1></legend>
             ${periodsWithCases().map(p => `
               <div class="option">
                 <input type="radio" name="period" id="p-${p.code}" value="${p.code}" ${state.period === p.code ? "checked" : ""}>
@@ -149,7 +148,7 @@ export const SCREENS = {
         <p class="eyebrow">${ui("theme_eyebrow")} · ${esc(periodLabel(state.period))}</p>
         <form id="theme-form">
           <fieldset class="options">
-            <legend><h1 id="screen-title">${ui("theme_title")}</h1></legend>
+            <legend><h1 id="screen-title" data-type>${ui("theme_title")}</h1></legend>
             ${getThemes().filter(th => available.has(th.code)).map(th => `
               <div class="option">
                 <input type="radio" name="theme" id="t-${th.code}" value="${th.code}" ${state.theme === th.code ? "checked" : ""}>
@@ -191,22 +190,22 @@ export const SCREENS = {
   choice: {
     label: () => ui("label_choice"),
     render: () => `
-      <section class="screen interstitial">
+      <section class="screen interstitial interstitial--top">
         <p class="eyebrow">${ui("choice_eyebrow")}</p>
         <ol class="fx-log" aria-hidden="true">
-          <li style="--i:0"><span>▸ ${ui("fx_l1")}</span><span class="ok">✓</span></li>
-          <li style="--i:1"><span>▸ ${ui("fx_l2")}</span><span class="ok">✓</span></li>
-          <li style="--i:2"><span>▸ ${ui("fx_l3")}</span><span class="ok">✓</span></li>
-          <li style="--i:3"><span>▸ ${ui("fx_l4")} <code id="fx-id"></code></span><span class="ok">✓</span></li>
+          <li><span class="mark">▸</span><span class="label">${ui("fx_l1")}</span><span class="ok">✓</span></li>
+          <li><span class="mark">▸</span><span class="label">${ui("fx_l2")}</span><span class="ok">✓</span></li>
+          <li><span class="mark">▸</span><span class="label">${ui("fx_l3")}</span><span class="ok">✓</span></li>
+          <li><span class="mark">▸</span><span class="label">${ui("fx_l4")}</span><code id="fx-id"></code><span class="ok">✓</span></li>
         </ol>
-        <h1 id="screen-title" class="fx-late">
-          <span class="line">${ui("choice_l1")}</span>
-          <span class="line dim">${ui("choice_l2")}</span>
-          <span class="line">${ui("choice_l3")}</span>
+        <h1 id="screen-title">
+          <span class="line" data-type-later>${ui("choice_l1")}</span>
+          <span class="line dim" data-type-later>${ui("choice_l2")}</span>
+          <span class="line" data-type-later>${ui("choice_l3")}</span>
         </h1>
         <div class="actions fx-late"><button type="button" class="btn" data-action="next">${ui("choice_btn")}</button></div>
       </section>`,
-    bind: (root) => scramble(root.querySelector("#fx-id"), state.sealed.caseId, { delay: 1800, duration: 900 }),
+    bind: (root) => { runCaseAssembly(root, state.sealed.caseId); },
   },
 
   /* 05 ---------------------------------------------------------------- */
@@ -239,8 +238,8 @@ export const SCREENS = {
       if (!reveal.role) return `
       <section class="screen interstitial">
         <p class="eyebrow">${ui("role_eyebrow")}</p>
-        <h1 id="screen-title"><span class="line">${ui("role_teaser")}</span></h1>
-        <div class="actions"><button type="button" class="btn" data-action="reveal" data-key="role">${ui("role_btn")}</button></div>
+        <h1 id="screen-title"><span class="line" data-type>${ui("role_teaser")}</span></h1>
+        <div class="actions after-type"><button type="button" class="btn" data-action="reveal" data-key="role">${ui("role_btn")}</button></div>
       </section>`;
       const { variant } = state.sealed;
       return `
@@ -263,10 +262,10 @@ export const SCREENS = {
       <section class="screen interstitial">
         <p class="eyebrow">${ui("dev_eyebrow")}</p>
         <h1 id="screen-title">
-          <span class="line">${ui("dev_l1")}</span>
-          <span class="line dim">${ui("dev_l2")}</span>
+          <span class="line" data-type>${ui("dev_l1")}</span>
+          <span class="line dim" data-type>${ui("dev_l2")}</span>
         </h1>
-        <div class="actions"><button type="button" class="btn" data-action="reveal" data-key="development">${ui("dev_btn")}</button></div>
+        <div class="actions after-type"><button type="button" class="btn" data-action="reveal" data-key="development">${ui("dev_btn")}</button></div>
       </section>`;
       const { variant } = state.sealed;
       return `

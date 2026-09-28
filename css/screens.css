@@ -144,3 +144,66 @@
 .dossier .party { background: rgba(255,255,255,.35); border-color: #d6cfbf; }
 .dossier .party__row span { color: #5b5a55; }
 .dossier dd strong { font-weight: 600; }
+
+/* ---------- Fiction notice ---------- */
+.fiction {
+  max-width: var(--measure); font-size: .875rem; line-height: 1.55; color: var(--muted);
+  padding: var(--space-3) var(--space-4); border: 1px dashed var(--line-strong);
+}
+.fiction strong { display: block; font-family: var(--font-mono); font-size: .6875rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); margin-bottom: var(--space-1); }
+.fiction-short { font-family: var(--font-mono); font-size: .6875rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-top: var(--space-2); }
+.dossier .fiction-short { color: #5b5a55; margin-top: var(--space-4); }
+
+/* ---------- Welcome: the negotiation table ---------- */
+.table-fx { width: min(100%, 340px); height: auto; display: block; margin-bottom: var(--space-2); }
+.t-table { fill: rgba(21,26,33,.7); stroke: var(--line-strong); stroke-width: 1; }
+.t-seat { fill: var(--bg); stroke: var(--muted); stroke-width: 1.2; animation: seat 6s ease-in-out infinite; animation-delay: calc(var(--i) * 2s); }
+.t-seat.is-key { stroke: var(--accent); }
+.t-thread { stroke: var(--accent); stroke-width: 1; stroke-dasharray: 320; stroke-dashoffset: 320; opacity: 0; animation: thread 6s var(--ease) infinite; animation-delay: calc(var(--i) * 2s); }
+.t-core { fill: var(--accent); animation: core 2.4s ease-in-out infinite; }
+@keyframes thread { 0% { stroke-dashoffset: 320; opacity: 0; } 8% { opacity: .9; } 35% { stroke-dashoffset: 0; opacity: .9; } 60% { opacity: 0; stroke-dashoffset: 0; } 100% { opacity: 0; } }
+@keyframes seat { 0%, 100% { fill: var(--bg); } 20%, 35% { fill: rgba(200,168,106,.35); } }
+@keyframes core { 50% { opacity: .3; } }
+
+/* ---------- "The situation chooses for you": case assembly ---------- */
+.fx-log { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; font-family: var(--font-mono); font-size: .8125rem; letter-spacing: .06em; color: var(--muted); }
+.fx-log li { display: flex; gap: var(--space-3); opacity: 0; animation: appear .01s linear forwards; animation-delay: calc(var(--i) * .6s); }
+.fx-log code { color: var(--text); letter-spacing: .04em; }
+.fx-log .ok { color: var(--accent); opacity: 0; animation: appear .01s linear forwards; animation-delay: calc(var(--i) * .6s + .45s); }
+.fx-log li:last-child .ok { animation-delay: 2.8s; }
+.fx-late { opacity: 0; animation: rise .6s var(--ease) forwards; animation-delay: 3s; }
+@keyframes appear { to { opacity: 1; } }
+@keyframes rise { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+/* ---------- Declassified text: black bars wipe away ---------- */
+.declassify {
+  background-image: linear-gradient(#030405, #030405); background-repeat: no-repeat;
+  background-position: 100% 0; background-size: 100% 100%;
+  -webkit-box-decoration-break: clone; box-decoration-break: clone;
+  animation: declassify 1.5s var(--ease) .4s forwards;
+}
+@keyframes declassify { to { background-size: 0% 100%; } }
+/* The text itself is revealed in step with the bar, so nothing shows through it. */
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+  .declassify > span {
+    color: transparent; -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(var(--text), var(--text)); background-repeat: no-repeat;
+    background-position: 0 0; background-size: 0% 100%;
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-box-decoration-break: clone; box-decoration-break: clone;
+    animation: declassify-text 1.5s var(--ease) .4s forwards;
+  }
+  @keyframes declassify-text { to { background-size: 100% 100%; } }
+}
+
+/* ---------- The stamp lands on the case file ---------- */
+.dossier__stamp { animation: stamp .45s cubic-bezier(.2,1.5,.4,1) .5s both; }
+@keyframes stamp { from { transform: rotate(-14deg) scale(2.4); opacity: 0; } to { transform: rotate(-4deg) scale(1); opacity: 1; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .t-seat, .t-thread, .t-core, .fx-log li, .fx-log .ok, .fx-late, .dossier__stamp { animation: none; opacity: 1; }
+  .t-thread { stroke-dashoffset: 0; opacity: .5; }
+  .declassify { animation: none; background-size: 0% 100%; }
+  .declassify > span { animation: none; background: none; color: inherit; -webkit-text-fill-color: currentColor; }
+}
+@media print { .declassify, .declassify > span { background: none; -webkit-text-fill-color: currentColor; color: inherit; } }

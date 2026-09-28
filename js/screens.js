@@ -5,6 +5,7 @@ import { t, periodsWithCases, periodLabel, getThemes, themesFor, themeLabel } fr
 import { ui, getLang } from "./i18n.js";
 import { assignCase } from "./assign.js";
 import { CONFIG } from "./config.js";
+import { scramble, tableSvg } from "./fx.js";
 
 const esc = (s) => String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const $ = (root, sel) => root.querySelector(sel);
@@ -39,6 +40,7 @@ export const SCREENS = {
     label: () => ui("label_welcome"),
     render: () => `
       <section class="screen">
+        ${tableSvg()}
         <p class="eyebrow">${ui("welcome_eyebrow")}</p>
         <h1 class="display" id="screen-title">${ui("title")}</h1>
         <p class="subtitle">${ui("subtitle")}</p>
@@ -48,6 +50,7 @@ export const SCREENS = {
           <p>${ui("welcome_p3")}</p>
           <p>${ui("welcome_p4", N)}</p>
         </div>
+        <aside class="fiction"><strong>${ui("fiction_title")}</strong>${ui("fiction_long")}</aside>
         <div class="actions">
           <button type="button" class="btn" data-action="next">${ui("welcome_btn")}</button>
         </div>
@@ -147,19 +150,14 @@ export const SCREENS = {
         <form id="theme-form">
           <fieldset class="options">
             <legend><h1 id="screen-title">${ui("theme_title")}</h1></legend>
-            ${getThemes().map(th => {
-              const on = available.has(th.code);
-              return `
+            ${getThemes().filter(th => available.has(th.code)).map(th => `
               <div class="option">
-                <input type="radio" name="theme" id="t-${th.code}" value="${th.code}"
-                  ${on ? "" : "disabled"} ${state.theme === th.code ? "checked" : ""}
-                  ${on ? "" : `aria-describedby="t-${th.code}-na"`}>
+                <input type="radio" name="theme" id="t-${th.code}" value="${th.code}" ${state.theme === th.code ? "checked" : ""}>
                 <label for="t-${th.code}">
                   <span class="option__key">${esc(t(th.label))}</span>
-                  ${on ? `<span class="option__desc">${esc(t(th.desc))}</span>` : `<span class="option__na" id="t-${th.code}-na">${ui("theme_na")}</span>`}
+                  <span class="option__desc">${esc(t(th.desc))}</span>
                 </label>
-              </div>`;
-            }).join("")}
+              </div>`).join("")}
           </fieldset>
           <div class="notice" style="margin-top:var(--space-5)">
             <strong>${ui("final_title")}</strong>
@@ -195,13 +193,20 @@ export const SCREENS = {
     render: () => `
       <section class="screen interstitial">
         <p class="eyebrow">${ui("choice_eyebrow")}</p>
-        <h1 id="screen-title">
+        <ol class="fx-log" aria-hidden="true">
+          <li style="--i:0"><span>▸ ${ui("fx_l1")}</span><span class="ok">✓</span></li>
+          <li style="--i:1"><span>▸ ${ui("fx_l2")}</span><span class="ok">✓</span></li>
+          <li style="--i:2"><span>▸ ${ui("fx_l3")}</span><span class="ok">✓</span></li>
+          <li style="--i:3"><span>▸ ${ui("fx_l4")} <code id="fx-id"></code></span><span class="ok">✓</span></li>
+        </ol>
+        <h1 id="screen-title" class="fx-late">
           <span class="line">${ui("choice_l1")}</span>
           <span class="line dim">${ui("choice_l2")}</span>
           <span class="line">${ui("choice_l3")}</span>
         </h1>
-        <div class="actions"><button type="button" class="btn" data-action="next">${ui("choice_btn")}</button></div>
+        <div class="actions fx-late"><button type="button" class="btn" data-action="next">${ui("choice_btn")}</button></div>
       </section>`,
+    bind: (root) => scramble(root.querySelector("#fx-id"), state.sealed.caseId, { delay: 1800, duration: 900 }),
   },
 
   /* 05 ---------------------------------------------------------------- */
@@ -218,8 +223,9 @@ export const SCREENS = {
             <span>${ui("theme")} <b>${esc(themeLabel(situation.theme))}</b></span>
           </div>
           <h1 id="screen-title">${esc(t(situation.title))}</h1>
-          <p class="briefing__body">${esc(t(situation.context))}</p>
+          <p class="briefing__body"><span class="declassify"><span>${esc(t(situation.context))}</span></span></p>
           ${partiesHtml(situation.parties)}
+          <p class="fiction-short">${ui("fiction_short")}</p>
         </article>
         <div class="actions"><button type="button" class="btn" data-action="next">${ui("continue")}</button></div>
       </section>`;
@@ -242,7 +248,7 @@ export const SCREENS = {
         <p class="eyebrow">${ui("role_eyebrow")}</p>
         <article class="briefing" aria-labelledby="screen-title">
           <h1 id="screen-title">${esc(t(variant.role.title))}</h1>
-          <p class="briefing__body">${esc(t(variant.role.brief))}</p>
+          <p class="briefing__body"><span class="declassify"><span>${esc(t(variant.role.brief))}</span></span></p>
         </article>
         <div class="actions"><button type="button" class="btn" data-action="next">${ui("continue")}</button></div>
       </section>`;
@@ -268,7 +274,7 @@ export const SCREENS = {
         <p class="eyebrow">${ui("dev_eyebrow")}</p>
         <article class="briefing" aria-labelledby="screen-title">
           <h1 id="screen-title" class="visually-hidden">${ui("new_development")}</h1>
-          <p class="briefing__body">${esc(t(variant.development))}</p>
+          <p class="briefing__body"><span class="declassify"><span>${esc(t(variant.development))}</span></span></p>
         </article>
         <div class="actions"><button type="button" class="btn" data-action="next">${ui("open_case")}</button></div>
       </section>`;
@@ -306,6 +312,7 @@ export const SCREENS = {
             </ul>
             <p>${ui("task_close")}</p>
           </section>
+          <p class="fiction-short">${ui("fiction_short")}</p>
         </article>
         <div class="actions">
           <button type="button" class="btn" data-action="copy-id">${ui("copy_id")}</button>
@@ -378,6 +385,8 @@ function caseText(l) {
     `${u("new_development")}: ${t(variant.development, l)}`,
     ``,
     `${u("task")}: ${ui("task_rule", N, l)}`,
+    ``,
+    ui("fiction_short", {}, l),
   ].join("\n");
 }
 

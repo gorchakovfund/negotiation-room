@@ -92,7 +92,14 @@
     "theme_title": "What will the negotiations be about?",
     "theme_na": "No active file",
     "label_theme": "Choose your theme",
-    "theme": "Theme"
+    "theme": "Theme",
+    "fiction_title": "Please note",
+    "fiction_long": "All cases are fictional. They are inspired by the kinds of challenges real diplomats face, but the countries, organisations and events in them are invented and have nothing to do with real situations. Any resemblance is coincidental.",
+    "fiction_short": "Fictional case. Any resemblance to real events is coincidental.",
+    "fx_l1": "Opening the archive",
+    "fx_l2": "Selecting a situation",
+    "fx_l3": "Assigning your role",
+    "fx_l4": "Sealing case file"
   },
   "ru": {
     "page_title": "Переговорная комната — Диалог о будущем 2026",
@@ -187,6 +194,13 @@
     "theme_title": "О чём будут переговоры?",
     "theme_na": "Нет активного досье",
     "label_theme": "Выбор темы",
-    "theme": "Тема"
+    "theme": "Тема",
+    "fiction_title": "Обратите внимание",
+    "fiction_long": "Все кейсы вымышлены. Они вдохновлены задачами, с которыми сталкиваются настоящие дипломаты, но государства, организации и события в них придуманы и не имеют отношения к реальным ситуациям. Любое сходство случайно.",
+    "fiction_short": "Вымышленный кейс. Любое сходство с реальными событиями случайно.",
+    "fx_l1": "Открываем архив",
+    "fx_l2": "Подбираем ситуацию",
+    "fx_l3": "Назначаем вашу роль",
+    "fx_l4": "Опечатываем досье"
   }
 }

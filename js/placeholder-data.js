@@ -1,31 +1,40 @@
 // STAGE 1 ONLY. Replaced in Stage 2 by data/taxonomy.json + data/situations.json.
-// Mirrors the agreed MVP matrix: 5 situations, 4 periods (1990s hidden: no cases).
+// Proposed matrix (v2): 6 periods × 6 regions, 12 situations.
+// Every region appears twice, every period offers two regions. Titles are working titles only.
 
 export const PERIODS = [
-  { code: "1919", label: "1919", desc: "Building peace after a major war" },
-  { code: "1962", label: "1962", desc: "A world on the brink of a global crisis" },
   { code: "1990", label: "1990s", desc: "Old rules are disappearing, new ones have not yet been established" },
-  { code: "2026", label: "2026", desc: "A world of growing uncertainty" },
-  { code: "2040", label: "2040", desc: "A future whose rules are yet to be written" },
+  { code: "2000", label: "2000s", desc: "A world that believed the big questions were settled" },
+  { code: "2010", label: "2010s", desc: "Crises arrive faster than institutions can respond" },
+  { code: "2026", label: "2026",  desc: "A world of growing uncertainty" },
+  { code: "2040", label: "2040",  desc: "Climate and technology raise the stakes" },
+  { code: "2050", label: "2050",  desc: "A future whose rules are yet to be written" },
 ];
 
 export const REGIONS = [
-  { code: "EU", label: "Europe" },
-  { code: "ME", label: "Middle East" },
-  { code: "AS", label: "Asia" },
+  { code: "BK", label: "The Balkans" },
+  { code: "AR", label: "Arabian Peninsula" },
   { code: "AF", label: "Africa" },
   { code: "LA", label: "Latin America" },
-  { code: "GL", label: "Global" },
+  { code: "EU", label: "Europe" },
+  { code: "AS", label: "Asia" },
 ];
 
 const LOREM = "Placeholder context. The real text (500–800 characters) will explain what is happening, who the main parties are, why negotiations are necessary and what makes agreement difficult. It will stop at a decision point and never reveal the real historical outcome. This paragraph only exists so you can judge reading length and pacing on your phone and desktop.";
 
 export const SITUATIONS = [
-  { id: "PWS", period: "1919", region: "EU", title: "Post-war settlement", type: "real" },
-  { id: "CMC", period: "1962", region: "GL", title: "Cuban Missile Crisis", type: "real" },
-  { id: "TBR", period: "2026", region: "AF", title: "Transboundary river in a drought", type: "fictional" },
-  { id: "MAR", period: "2026", region: "AS", title: "Maritime incident", type: "fictional" },
-  { id: "NTR", period: "2040", region: "GL", title: "Rules for a new technology", type: "fictional" },
+  { id: "DTW", period: "1990", region: "BK", title: "A divided town after the ceasefire", type: "fictional" },
+  { id: "DMB", period: "1990", region: "AF", title: "Disarming the armed groups", type: "fictional" },
+  { id: "BDR", period: "2000", region: "AR", title: "Drawing the desert border", type: "fictional" },
+  { id: "GAS", period: "2000", region: "LA", title: "Who owns the gas?", type: "fictional" },
+  { id: "MIG", period: "2010", region: "EU", title: "Sharing responsibility for new arrivals", type: "fictional" },
+  { id: "FSH", period: "2010", region: "AS", title: "An incident at the fishing grounds", type: "fictional" },
+  { id: "SHP", period: "2026", region: "AR", title: "A threatened shipping lane", type: "fictional" },
+  { id: "ENR", period: "2026", region: "BK", title: "A pipeline across three borders", type: "fictional" },
+  { id: "RIV", period: "2040", region: "AF", title: "A river in a permanent drought", type: "fictional" },
+  { id: "LTH", period: "2040", region: "LA", title: "Lithium and the forest", type: "fictional" },
+  { id: "CLM", period: "2050", region: "EU", title: "Climate relocation", type: "fictional" },
+  { id: "AIR", period: "2050", region: "AS", title: "Rules for autonomous systems", type: "fictional" },
 ].map(s => ({
   ...s,
   context: LOREM,

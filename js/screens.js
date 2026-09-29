@@ -344,7 +344,7 @@ export const SCREENS = {
         <h1 id="screen-title">${ui("video_title", N)}</h1>
         <div class="lead">
           <p><strong>${ui("video_rule", N)}</strong></p>
-          <p>${ui("video_body")}</p>
+          ${ui("video_body").split("\n\n").map(p => `<p>${p}</p>`).join("")}
         </div>
         <div class="dossier__id" style="border-color:var(--line-strong);max-width:560px">
           <span style="color:var(--muted)">${ui("your_case_id")}</span>
